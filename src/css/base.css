@@ -50,7 +50,7 @@ section {
 /* mobile adaptive */
 @media only screen and (min-width: 375px) {
    .container {
-    max-width: 374.98px;
+    max-width: 375px;
     margin: 0 auto;
     padding: 0 16px;
   }
