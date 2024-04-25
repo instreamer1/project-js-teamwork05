@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Inter Tight';
+    src: local('Inter Tight'), local('InterTight-SemiBold'),
+        url('InterTight-SemiBold.woff2') format('woff2'),
+        url('InterTight-SemiBold.woff') format('woff'),
+        url('InterTight-SemiBold.ttf') format('truetype');
+    font-weight: semibold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: local('Inter Tight Medium'), local('InterTight-Medium'),
+        url('InterTight-Medium.woff2') format('woff2'),
+        url('InterTight-Medium.woff') format('woff'),
+        url('InterTight-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,24 @@
+{
+  "name": "project-js-teamwork05",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/project-js-teamwork05/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "glob": "^8.1.0",
+    "vite": "^4.5.2"
+  },
+  "author": "project-js-teamwork05>",
+  "license": "ISC",
+  "dependencies": {
+    "accordion-js": "^3.3.4",
+    "axios": "^1.6.8",
+    "izitoast": "^1.4.0",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
+}

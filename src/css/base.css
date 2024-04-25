@@ -1,0 +1,73 @@
+:root {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+
+  color: #fafafa;
+  /* background-color: #1c1d20; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  /* background-color: var(--black, #1c1d20); */
+}
+section {
+  background-color: #1c1d20;
+}
+
+/* mobile fluid layout, Резиновая верстка до 375px*/
+@media only screen and (min-width: 320px) and (max-width: 374.98px) {
+  .container {
+    max-width: 374.98px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+
+/* mobile adaptive */
+@media only screen and (min-width: 375px) {
+   .container {
+    max-width: 374.98px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+ .container {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}

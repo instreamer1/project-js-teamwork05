@@ -1,0 +1,22 @@
+@media only screen and (min-width: 320px) and (max-width: 374.98px) {
+  section {
+    max-width: 374.98px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 105%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  section {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
