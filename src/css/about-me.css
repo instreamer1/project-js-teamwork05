@@ -337,14 +337,14 @@ button {
 
 @media only screen and (min-width:768px) {
     .blocks-list {
-        margin-left: -150px;
+        margin-left: 32px;
 
     }
 }
 
 @media only screen and (min-width:1440px) {
     .blocks-list {
-        margin-left: -500px;
+        margin-left: 32px;
 
     }
 }
@@ -452,25 +452,28 @@ button {
 
     position: relative;
     top: 51px;
-    left: 323px;
+    left: 315px;
 }
 
 @media screen and (min-width:768px) {
     .arrow-right-btn {
         top: 80px;
-        left: 520px;
+        left: 696px;
+
     }
 }
 
 @media screen and (min-width:1440px) {
     .arrow-right-btn {
         top: 80px;
-        left: 830px;
+        left: 1336px;
     }
 }
 
-.icon-arrow-right {
+.icon-arrows-right {
     stroke: #3B3B3B;
+    width: 28px;
+    height: 28px;
 }
 
 
