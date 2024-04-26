@@ -1,0 +1,130 @@
+.benefits {
+  margin-bottom: 64px;
+  max-width: 374.98px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-bottom: 58px;
+}
+
+.benifits-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+.benefits-list {
+  margin-bottom: 32px;
+}
+
+.benefits-item {
+  border-radius: 20px;
+  padding: 24px;
+  width: 100%;
+  height: 270px;
+  background: #242527;
+  margin-bottom: 16px;
+}
+
+.benefits-item:last-child {
+  margin-bottom: 0;
+}
+
+.benefits-item-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  margin-bottom: 8px;
+}
+
+.benefits-item-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+.benefits-item-svg {
+  background-color: #ed3b44;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 64px;
+}
+.benefits-item-svg > use {
+  width: 24px;
+  height: 24px;
+}
+
+.benefits-btn {
+  display: block;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: inherit;
+  border-radius: 60px;
+  padding: 18px 35px;
+  width: 187px;
+  height: 55px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  align-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits {
+    margin-bottom: 64px;
+    max-width: 768px;
+    padding-bottom: 58px;
+  }
+
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  .benefits-item {
+    flex-basis: calc((100% - 16px) / 2);
+    border-radius: 20px;
+    padding: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .benefits {
+    max-width: 1440px;
+    margin-bottom: 164px;
+    padding-bottom: 0;
+  }
+
+  .benifits-title {
+    width: 600px;
+    margin-bottom: 0;
+  }
+  .benefits-list {
+    margin-left: 696px;
+    margin-top: -24px;
+  }
+
+  .benefits-btn {
+    margin-left: 696px;
+  }
+}
+
+/* .benifits-title 
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: rgba(250, 250, 250, 0.4); */
