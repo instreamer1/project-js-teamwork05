@@ -1,0 +1,15 @@
+/* :root {
+    --cards: #242527;
+    --arrow: #3b3b3b;
+    --button-text: #ed3b44;
+    --main-text: #fafafa;
+} */
+
+.text {
+    color: red;
+}
+
+.hidden-title {
+    display: none;
+}
+
