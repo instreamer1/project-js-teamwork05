@@ -1,5 +1,5 @@
 body {
-    background-color: #1C1D20;
+     background-color: #1C1D20; 
 }
 
 button {
@@ -10,6 +10,8 @@ button {
     max-width: 374.98px;
     min-width: 320px;
     margin: 0 auto;
+
+    
 }
 
 @media only screen and (min-width:768px) {
@@ -195,14 +197,22 @@ button {
 
 .arrow-btn {
     position: relative;
-    bottom: 2px;
+    top: 2px;
     left: 294px;
     gap: 23px;
+
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+
 }
 
 @media only screen and (min-width:768px) {
     .arrow-btn {
         left: 664px;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -212,11 +222,45 @@ button {
     }
 }
 
+.icon-arrow-down{
+    width: 18px;
+    height: 18px;
+
+position: relative;
+top: 3px;
+left: 0;
+
+}
+
+.icon-arrow-up{
+width: 18px;
+height: 18px;
+
+position: relative;
+    top: 2px;
+    left: 0;
+
+}
+
+@media only screen and (min-width:768px){
+    .icon-arrow-down {
+            width: 20px;
+            height: 20px;
+        }
+    
+        .icon-arrow-up {
+            width: 20px;
+            height: 20px;
+        }
+}
+
 
 .div-content {
     display: flex;
     text-align: left;
     gap: 32px;
+
+    margin-top: 12px;
 }
 
 
@@ -472,15 +516,16 @@ button {
 
 .icon-arrows-right {
     stroke: #3B3B3B;
+    fill: none;
     width: 28px;
     height: 28px;
 }
 
 
 @media screen and (min-width:768px) {
-    .icon-arrow-right {
-        min-width: 40px;
-        min-height: 40px;
+    .icon-arrows-right {
+        width: 40px;
+        height: 40px;
 
     }
 }
