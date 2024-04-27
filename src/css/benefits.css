@@ -4,6 +4,8 @@
   min-width: 320px;
   margin: 0 auto;
   padding-bottom: 58px;
+  padding-top: 70px;
+  padding-bottom: 58px;
 }
 
 .benifits-title {
@@ -80,9 +82,10 @@
 
 @media only screen and (min-width: 768px) {
   .benefits {
-    margin-bottom: 64px;
+    /* margin-bottom: 64px; */
     max-width: 768px;
     padding-bottom: 58px;
+    padding-top: 96px;
   }
 
   .benefits-list {
@@ -102,8 +105,8 @@
 @media only screen and (min-width: 1440px) {
   .benefits {
     max-width: 1440px;
-    margin-bottom: 164px;
-    padding-bottom: 0;
+    padding-top: 164px;
+    padding-bottom: 164px;
   }
 
   .benifits-title {
