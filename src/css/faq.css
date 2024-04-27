@@ -2,8 +2,8 @@
   content: none;
 }
 
-body .faq-conteiner {
-  background-color: transparent;
+.faq-conteiner {
+  /* background-color: transparent; */
   max-width: 375px;
   margin-right: auto;
   margin-left: auto;
