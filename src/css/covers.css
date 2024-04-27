@@ -1,46 +1,32 @@
-/* :root {
-    --cards: #242527;
-    --arrow: #3b3b3b;
-    --button-text: #ed3b44;
-    --main-text: #fafafa;
-} */
-
-.text {
-    color: red;
-}
-
 .background {
     background-image: url(../img/covers/background-covers.png);
+    background-position: top;
 }
 
 .hidden-title {
     display: none;
 }
 
-.marquee__inner.hidden-before-desktop {
+.marquee__inner.hidden-before-desktop,
+.marquee__line.hidden-before-desktop {
     display: none;
 }
 
 .container.covers {
     padding: 0;
 }
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+
+.covers-img {
+    height: 100%;
+    width: 282px;
 }
 
 .marquee {
-    /* min-height: 508px; */
     overflow: hidden;
-    font-family: "Pridi", sans-serif;
-    font-weight: 600;
-    font-size: 34px;
-    text-transform: uppercase;
 }
 
 .marquee__inner {
-    margin-top: 20px;
+    margin-bottom: 23px;
     display: flex;
     transform: rotate(16deg);
 }
@@ -48,12 +34,12 @@
 .marquee__line {
     background-color: #FFDC00;
     flex-shrink: 0;
-    margin-right: 10px;
+    margin-right: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 282px;
-    height: 162px;
+    /* height: 162px; */
     white-space: nowrap;
     animation-name: marqueeLine;
     animation-duration: 5s;
