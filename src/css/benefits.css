@@ -80,7 +80,7 @@
 
 @media only screen and (min-width: 768px) {
   .benefits {
-    margin-bottom: 64px;
+    /* margin-bottom: 64px; */
     max-width: 768px;
     padding-bottom: 58px;
   }
@@ -102,7 +102,7 @@
 @media only screen and (min-width: 1440px) {
   .benefits {
     max-width: 1440px;
-    margin-bottom: 164px;
+    /* margin-bottom: 164px; */
     padding-bottom: 0;
   }
 
