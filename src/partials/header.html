@@ -1,10 +1,31 @@
 <header>
-    <section class="head">
+    <div class="container">
         <div class="logo">
-            <img class="logo-img" src="./img/header/Logo-photo.jpg" alt="Logo-photo">
-            <p class="logo-text">jefferson*</p>
+            <img class="logo-img" src="./img/header/Logo-photo.jpg" alt="Jefferson Logo">
+            <span>Jefferson*</span>
         </div>
-        <div class="header-nav"></div>
-        <div class="heder-btn"><a href="./work-together.html">Order the project</a></div>
-    </section>
+        <nav id="nav">
+            <svg class="burger-icon" width="28" height="28" viewBox="0 0 24 24">
+                <use xlink:href="svg_sprite-opt.svg#icon-menu-burger"></use>
+            </svg>
+            <span id="menu-toggle" onclick="toggleMenu()">Menu</span>
+            <ul id="menu">
+                <li class="nav-list"><a class="nav-list-link" href="#about">About me</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="#benefits">Benefits</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="#projects">Projects</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <a class="heder-btn" href="#work-together" class="order-btn">Order the project</a>
+    </div>
+
+    <!-- Модальне вікно для бургер-меню -->
+<div id="menu" class="modal">
+    <ul id="menu">
+        <li class="nav-list"><a class="nav-list-link" href="#about">About me</a></li>
+        <li class="nav-list"><a class="nav-list-link" href="#benefits">Benefits</a></li>
+        <li class="nav-list"><a class="nav-list-link" href="#projects">Projects</a></li>
+        <li class="nav-list"><a class="nav-list-link" href="#faq">FAQ</a></li>
+    <a href="#work-together" class="heder-btn order-btn">Order the project</a>
+</div>
 </header>

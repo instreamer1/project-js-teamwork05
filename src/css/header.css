@@ -1,11 +1,119 @@
 header {
-    display: flex;
-    margin: 0 auto; 
     position: absolute;
-    /* margin: 0 auto; */
-    /* opacity: 0.7;   */
-    background-color: rgba(255, 0, 0, 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 100);
+    color: #fff;
+    z-index: 100; 
 }
-.head {
-    margin: 0 auto;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.logo-img {
+    border-radius: 18px;
+}
+
+#menu {
+    list-style-type: none;
+    margin-top: 8px;
+    padding: 0;
+    display: none;      /* Hide menu by default */
+    position: absolute;
+    /* Position menu below the nav */
+    right: auto;
+    left: auto;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Add shadow */
+    text-align: center;
+    /* color: aqua; */
+}
+
+#menu-toggle {
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.nav-list {
+    display: block;
+    margin-bottom: 10px; /* Add spacing between menu items */
+}
+
+.nav-list-link {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-list-link:hover {
+    color: #666;
+}
+
+.heder-btn {
+    background-color: #ED3B44;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    letter-spacing: -0.02em;
+    transition: background-color 0.3s;
+}
+
+.heder-btn:hover {
+    background-color: #ED3B44;
+}
+
+#menu:target ul {
+    display: block;
+}
+
+/* Медіазапити */
+
+@media (max-width: 767px) {
+    /* Стилі для мобільних пристроїв */
+
+    .heder-btn,
+    #menu-toggle {
+        display: none; /* Приховує кнопку та текст Меню для мобільних пристроїв */
+    }
+
+    .burger-icon {
+        fill: #fafafa;
+        filter: brightness(0) invert(1); 
+    }
+       
+
+    /* Стилі для відображення меню при кліку на іконку бургер-меню */
+    #menu:target {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+    }
+
+    #menu:target ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
