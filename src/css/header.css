@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    margin: 0 auto; 
+    position: absolute;
+    /* margin: 0 auto; */
+    /* opacity: 0.7;   */
+    background-color: rgba(255, 0, 0, 0);
+}
+.head {
+    margin: 0 auto;
+}
