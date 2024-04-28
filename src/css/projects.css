@@ -234,10 +234,7 @@
   stroke: #3b3b3b;
 }
 
-.hotel {
-  display: none;
-}
-
+.hotel,
 .wallet {
   display: none;
 }
