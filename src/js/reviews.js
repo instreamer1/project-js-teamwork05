@@ -3,8 +3,49 @@ import iziToast from 'izitoast';
 import "izitoast/dist/css/iziToast.min.css";
 
 
-// import Swiper from 'swiper';
-// import 'swiper/swiper-bundle.min.css'
+import Swiper from 'swiper';
+import 'swiper/css';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+
+const swiperReviews = new Swiper('.reviews-wrapper', {
+    modules: [Navigation, Keyboard, Mousewheel],
+    direction: 'horizontal',
+    updateOnWindowResize: true,
+    slidesPerView: 1,
+    enabled: true,
+    swipeHandler: '.reviews-item',
+    speed: 300,
+    spaceBetween: 20,
+  
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+  
+    mousewheel: {
+      invert: true,
+    },
+  
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 16,
+      },
+  
+      1440: {
+        slidesPerView: 4,
+        slidesPerGroup: 1,
+        spaceBetween: 18,
+      },
+    },
+  
+    navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      preventClicks: false,
+    },
+  });
 
 const BASE_URL = "https://portfolio-js.b.goit.study/api";
 const END_POINT = "/reviews";
@@ -12,6 +53,7 @@ const END_POINT = "/reviews";
 const url = `${BASE_URL}${END_POINT}`;
 
 let currentId = 1;
+
 
 const selectors = {
     container: document.querySelector(".reviews-list"),
