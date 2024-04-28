@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/project-js-teamwork05/favicon-one.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio." />
+    <title>Portfolio</title>
+    
+    <script type="module" crossorigin src="/project-js-teamwork05/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/project-js-teamwork05/assets/vendor-df7f1691.js">
+    <link rel="stylesheet" href="/project-js-teamwork05/assets/vendor-b57918fa.css">
+    <link rel="stylesheet" href="/project-js-teamwork05/assets/index-6d34d472.css">
+  </head>
+  <body>
+    <header>
+    <div class="container">
+        <div class="logo">
+            <img class="logo-img" src="/project-js-teamwork05/assets/Logo-photo-0f9b365f.jpg" alt="Jefferson Logo">
+            <span>Jefferson*</span>
+        </div>
+        <nav id="nav">
+            <svg class="burger-icon" width="28" height="28" viewBox="0 0 24 24">
+                <use xlink:href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-menu-burger"></use>
+            </svg>
+            <span id="menu-toggle">Menu</span>
+            <ul id="menu">
+                <li class="nav-list"><a class="nav-list-link" href="#about-me">About me</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="#benefits">Benefits</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="#projects">Projects</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <a class="heder-btn" href="#work-together" class="order-btn">Order the project</a>
+    </div>
+
+    <!-- Модальне вікно для бургер-меню -->
+
+    <div class="backdrop"> <!--is-open-->
+        <div class="mobile-menu">
+            <button class="mobile-menu-btn" type="button">
+                <svg class="xclose-btn-mob" width="28" height="28">
+                    <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-list">
+                <li class="mobile-nav-list"><a class="mobile-nav-list-link" href="#about">About me</a></li>
+                <li class="mobile-nav-list"><a class="mobile-nav-list-link" href="#benefits">Benefits</a></li>
+                <li class="mobile-nav-list"><a class="mobile-nav-list-link" href="#projects">Projects</a></li>
+                <li class="mobile-nav-list"><a class="mobile-nav-list-link" href="#faq">FAQ</a></li>
+            </ul>
+            <a class="mobile-heder-btn" href="#work-together" class="order-btn">Order the project</a>
+    </div>
+    </div>
+</header>
+
+    <main>
+      <section class="hero-section">
+  <div class="container hero-general-container">
+    <div class="hero-title-container">
+      <h1 class="hero-title">
+        Hello. <br />I&#8217;m Fullstack Developer Lloyd Jefferson.
+      </h1>
+    </div>
+    <div class="hero-list-container">
+      <ul class="hero-list">
+        <li class="hero-list-item">
+          <a
+            class="hero-list-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            >ig</a
+          >
+        </li>
+        <li class="hero-list-item">
+          <a
+            class="hero-list-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            >fb</a
+          >
+        </li>
+        <li class="hero-list-item">
+          <a
+            class="hero-list-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            >yt</a
+          >
+        </li>
+        <li class="hero-list-item">
+          <a
+            class="hero-list-link"
+            href="https://github.com/inmate1/project-js-teamwork05"
+            target="_blank"
+            >gh</a
+          >
+        </li>
+      </ul>
+      <div class="hero-email">
+        <a class="hero-link-email" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="about-me" class="abt-me-section">
+  <h2 class="visually-hidden">hidden</h2>
+  <div class="about-me-section-hero">
+    <div class="about-me-text">
+      <p id="paragraph" class="abt-me-paragraph">
+        I work with people all over the world to create impressive and
+        <span class="functional-span">functional</span>
+        <span class="websites-span">websites</span> that reflect each client's
+        unique personality.
+      </p>
+    </div>
+    <div class="abt-me-img">
+      <img
+        id="person-img"
+        class="person-img"
+        src="/src/img/image.jpg"
+        srcset="
+          /src/img/image.jpg   1x,
+          /src/img/image.jpg   2x,
+          /src/img/image-2.jpg 1x,
+          /src/img/image-2.jpg 2x
+        "
+        alt="Person"
+        width="343"
+      />
+    </div>
+  </div>
+
+  <!--SLIDERS -->
+  <div class="about-me-section">
+    <div class="slider">
+      <div class="header-and-btn" id="header-slider">
+        <h3 class="div-header">About me</h3>
+        <button class="arrow-btn" type="button">
+          <svg class="icon-arrow-up" width="40" height="40">
+            <use href="../img/svg_sprite-opt.svg#icon-arrow-up"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="div-content">
+        <ul class="about-paragraph-list">
+          <li class="about-item">
+            <p class="about-item-paragraph">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages ​​and technologies, always ready
+              to improve my skills. I always follow the latest trends and look
+              for unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+          </li>
+          <li class="about-item">
+            <p class="about-item-paragraph">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work. <br class="text-br" />
+              I am always looking for opportunities for self-improvement. I
+              actively study new technologies and practices to stay abreast of
+              the latest innovations. I have a strong understanding of various
+              programming languages, frameworks and architectural concepts that
+              allow me to create efficient and scalable software.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider">
+      <svg class="icon-stroke" width="343" height="40">
+        <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
+      </svg>
+      <h3 class="div-header">Role</h3>
+      <button class="arrow-btn" type="button">
+        <svg class="icon-arrow-down" width="18" height="18">
+          <use href="../img/svg_sprite-opt.svg#icon-arrow-down"></use>
+        </svg>
+      </button>
+      <div class="div-content hidden">
+        <ul class="role-list hidden">
+          <li class="role-item">Frontend development</li>
+          <li class="role-item">HeadlessCMS,Wordpress</li>
+          <li class="role-item">Blender(enjoy)</li>
+        </ul>
+      </div>
+    </div>
+    <svg class="icon-stroke" width="343" height="40">
+      <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
+    </svg>
+    <div class="slider">
+      <h3 class="div-header">Education</h3>
+      <button class="arrow-btn" type="button">
+        <svg class="icon-arrow-down" width="40" height="40">
+          <use href="../img/svg_sprite-opt.svg#icon-arrow-down"></use>
+        </svg>
+      </button>
+      <div class="div-content hidden">
+        <ul class="education-list hidden">
+          <li class="education-item">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </li>
+          <li class="education-item">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </li>
+          <li class="education-item">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </li>
+        </ul>
+      </div>
+      <svg class="icon-stroke" width="343" height="40">
+        <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
+      </svg>
+    </div>
+  </div>
+
+  <!--APP BUTTONS-->
+  <div class="content">
+    <ul class="blocks-list" id="blocks-list">
+      <li class="blocks-item">
+        <button class="btn" type="button">HTML/CSS</button>
+      </li>
+      <li class="blocks-item">
+        <button class="btn" type="button">JavaScript</button>
+      </li>
+      <li class="blocks-item hidden">
+        <button class="btn" type="button">React</button>
+      </li>
+      <li class="blocks-item hidden">
+        <button class="btn" type="button">Node.js</button>
+      </li>
+      <li class="blocks-item hidden">
+        <button class="btn" type="button">React Native</button>
+      </li>
+      <li class="blocks-item hidden">
+        <button class="btn" type="button">Soft skills</button>
+      </li>
+    </ul>
+
+    <button class="arrow-right-btn" type="button">
+      <svg class="icon-arrows-right" width="28" height="28">
+        <use href="../img/svg_sprite-opt.svg#icon-arrows-right"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+      <section class="benefits" id="benefits">
+  <div class="container">
+    <h2 class="benifits-title">Benefits of working with me</h2>
+    <ul class="benefits-list">
+      <li class="benefits-item">
+        <svg class="benefits-item-svg" width="48" height="48">
+          <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-service_expertise"></use>
+        </svg>
+        <div class="benefits-content">
+          <h3 class="benefits-item-title">Expertise</h3>
+          <p class="benefits-item-text">
+            As a highly experienced developer, I have deep knowledge of
+            programming and website development.
+          </p>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <svg class="benefits-item-svg" width="48" height="48">
+          <use
+            href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-service_communication"
+          ></use>
+        </svg>
+        <div class="benefits-content">
+          <h3 class="benefits-item-title">Communication</h3>
+          <p class="benefits-item-text">
+            Understanding your needs and wants is my priority and I am always
+            open to discussions and corrections.
+          </p>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <svg class="benefits-item-svg" width="48" height="48">
+          <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-service_art"></use>
+        </svg>
+        <div class="benefits-content">
+          <h3 class="benefits-item-title">Art</h3>
+          <p class="benefits-item-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <svg class="benefits-item-svg" width="48" height="48">
+          <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-service_expertise"></use>
+        </svg>
+        <div class="benefits-content">
+          <h3 class="benefits-item-title">Urgent execution</h3>
+          <p class="benefits-item-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <a href="#work-together" class="benefits-btn">Order the Project</a>
+  </div>
+</section>
+
+      <section class="container">
+  <h2 class="title">Projects</h2>
+
+  <div class="card-wrapper">
+    <div class="programming-wrapper">
+      <ul class="technologies-list">
+        <li class="technologies-item react">
+          <p class="technologies-text">#react</p>
+        </li>
+
+        <li class="technologies-item js">
+          <p class="technologies-text">#js</p>
+        </li>
+
+        <li class="technologies-item node">
+          <p class="technologies-text">#node js</p>
+        </li>
+
+        <li class="technologies-item git">
+          <p class="technologies-text">#git</p>
+        </li>
+      </ul>
+
+      <h3 class="small-title">
+        Programming Across Borders: Ideas, Technologies, Innovations
+      </h3>
+
+      <a
+        class="link"
+        href="https://github.com/inmate1/project-js-teamwork05"
+        target="_blank"
+      >
+        See project
+      </a>
+    </div>
+
+    <div class="img-wrapper">
+      <ul class="img-list">
+        <li class="img-item girl">
+          <picture class="picture">
+            <source
+              media="(min-width: 1440px)"
+              srcset="/project-js-teamwork05/assets/girl-2acd85e3.webp 1x, /project-js-teamwork05/assets/girl@2x-3a1d1955.webp 2x"
+              width="614"
+              height="385"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-js-teamwork05/assets/girl-2acd85e3.webp 1x, /project-js-teamwork05/assets/girl@2x-3a1d1955.webp 2x"
+              width="614"
+              height="385"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-js-teamwork05/assets/girl-2acd85e3.webp 1x, /project-js-teamwork05/assets/girl@2x-3a1d1955.webp 2x"
+              width="311"
+              height="195"
+            />
+            <img
+              class="img"
+              src="/project-js-teamwork05/assets/girl-64a37946.jpg"
+              alt="Ukrainian traditional clothes"
+              width="311"
+              height="195"
+            />
+          </picture>
+        </li>
+        <li class="img-item hotel">
+          <picture class="picture">
+            <source
+              media="(min-width: 1440px)"
+              srcset="/project-js-teamwork05/assets/hotel-7f17d437.webp 1x, /project-js-teamwork05/assets/hotel@2x-ca282062.webp 2x"
+              width="614"
+              height="385"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-js-teamwork05/assets/hotel-7f17d437.webp 1x, /project-js-teamwork05/assets/hotel@2x-ca282062.webp 2x"
+              width="614"
+              height="385"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-js-teamwork05/assets/hotel-7f17d437.webp 1x, /project-js-teamwork05/assets/hotel@2x-ca282062.webp 2x"
+              width="311"
+              height="195"
+            />
+            <img
+              src="/project-js-teamwork05/assets/hotel-07b6a216.jpg"
+              alt="Hotel-restaurant Mimino"
+              class="img"
+              width="311"
+              height="195"
+            />
+          </picture>
+        </li>
+
+        <li class="img-item wallet">
+          <picture class="picture">
+            <source
+              media="(min-width: 1440px)"
+              srcset="/project-js-teamwork05/assets/wallet-136c281b.webp 1x, /project-js-teamwork05/assets/wallet@2x-9b3d1336.webp 2x"
+              width="614"
+              height="385"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-js-teamwork05/assets/wallet-136c281b.webp 1x, /project-js-teamwork05/assets/wallet@2x-9b3d1336.webp 2x"
+              width="614"
+              height="385"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-js-teamwork05/assets/wallet-136c281b.webp 1x, /project-js-teamwork05/assets/wallet@2x-9b3d1336.webp 2x"
+              width="311"
+              height="195"
+            />
+            <img
+              class="img"
+              src="/project-js-teamwork05/assets/wallet-71f59267.jpg"
+              alt="Electronic wallet"
+              width="311"
+              height="195"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="button button-left" type="button">
+      <svg class="arrow">
+        <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrows-left"></use>
+      </svg>
+    </button>
+
+    <button class="button button-right" type="button">
+      <svg class="arrow">
+        <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrows-right"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+      <section class="faq-conteiner" id="faq">
+  <h1 class="top-title">FAQ</h1>
+  <ul class="list accordion-container">
+    <li class="list-item ac bord-right">
+      <div class="list-item-title ac-trigger">
+        What programming languages are most often used in your project?
+
+        <div class="box-conteiner">
+          <svg class="box-icon" width="20" height="20">
+            <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <p class="list-item-text ac-panel">
+        In the field of web development, there are various technologies and
+        programming languages. Typically, this includes a combination of
+        frontend (client side) and backend (server side) languages.
+      </p>
+    </li>
+
+    <li class="list-item ac bord-right marg-left">
+      <div class="list-item-title ac-trigger">
+        What are the deadlines for the project?
+        <div class="box-conteiner">
+          <svg class="box-icon" width="20" height="20">
+            <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <p class="list-item-text ac-panel">
+        The terms of project implementation depend to a large extent on a number
+        of factors, such as the scope of the project, its complexity, and the
+        availability of resources. Determining exact deadlines is a difficult
+        task, and it usually occurs during the planning phase of the project.
+      </p>
+    </li>
+
+    <li class="list-item ac bord-right bord-bottom marg-left">
+      <div class="list-item-title ac-trigger">
+        What payment methods do you accept?
+        <div class="box-conteiner">
+          <svg class="box-icon" width="20" height="20">
+            <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <p class="list-item-text ac-panel">
+        Payment through credit and debit cards such as Visa, MasterCard,
+        specialized electronic payment systems such as PayPal, as well as
+        payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+      </p>
+    </li>
+
+    <li class="list-item ac bord-left">
+      <div class="list-item-title ac-trigger">
+        How can I contact you?
+        <div class="box-conteiner">
+          <svg class="box-icon" width="20" height="20">
+            <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <p class="list-item-text ac-panel">
+        In the field of web development, there are various technologies and
+        programming languages. Typically, this includes a combination of
+        frontend (client side) and backend (server side) languages.
+      </p>
+    </li>
+    <li class="list-item ac bord-left margen-left">
+      <div class="list-item-title ac-trigger">
+        Do you provide advice or support?
+        <div class="box-conteiner">
+          <svg class="box-icon" width="20" height="20">
+            <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <p class="list-item-text ac-panel">
+        The terms of project implementation depend to a large extent on a number
+        of factors, such as the scope of the project, its complexity, and the
+        availability of resources. Determining exact deadlines is a difficult
+        task, and it usually occurs during the planning phase of the project.
+      </p>
+    </li>
+    <li class="list-item ac bord-left">
+      <div class="list-item-title ac-trigger">
+        What does the process of developing a software product look like from
+        idea to implementation?
+        <div class="box-conteiner">
+          <svg class="box-icon" width="20" height="20">
+            <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <p class="list-item-text ac-panel">
+        Payment through credit and debit cards such as Visa, MasterCard,
+        specialized electronic payment systems such as PayPal, as well as
+        payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+      </p>
+    </li>
+  </ul>
+</section>
+
+      <section class="covers background" id="covers">
+  <div class="container">
+    <div class="covers"></div>
+    <h1 class="hidden-title"></h1>
+    <div class="content">
+      <div class="marquee">
+        <ul class="marquee__inner">
+          <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle10-f4184da2.jpg 1x, /project-js-teamwork05/assets/Rectangle10@2x-d4dd9c66.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle10-f4184da2.jpg"
+              width="282"
+              height="163"
+              alt="Project №1"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle7-bef657fd.jpg 1x, /project-js-teamwork05/assets/Rectangle7@2x-980b81f3.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle7-bef657fd.jpg"
+              width="282"
+              height="163"
+              alt="Project №2"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle6-e5b53e19.jpg 1x, /project-js-teamwork05/assets/Rectangle6@2x-94988b90.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle6-e5b53e19.jpg"
+              width="282"
+              height="163"
+              alt="Project №3"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line hidden-before-tablet">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle10-f4184da2.jpg 1x, /project-js-teamwork05/assets/Rectangle10@2x-d4dd9c66.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle10-f4184da2.jpg"
+              width="282"
+              height="163"
+              alt="Project №1 repeat"
+              loading="lazy"
+            />
+          </li>
+            <li class="marquee__line hidden-before-tablet">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle7-bef657fd.jpg 1x, /project-js-teamwork05/assets/Rectangle7@2x-980b81f3.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle7-bef657fd.jpg"
+              width="282"
+              height="163"
+              alt="Project №2 repeat"
+              loading="lazy"
+            />
+          </li>
+           <li class="marquee__line hidden-before-desktop">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle6-e5b53e19.jpg 1x, /project-js-teamwork05/assets/Rectangle6@2x-94988b90.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle6-e5b53e19.jpg"
+              width="282"
+              height="163"
+              alt="Project №3 repeat"
+              loading="lazy"
+            />
+            <li class="marquee__line hidden-before-desktop">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle10-f4184da2.jpg 1x, /project-js-teamwork05/assets/Rectangle10@2x-d4dd9c66.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle10-f4184da2.jpg"
+              width="282"
+              height="163"
+              alt="Project №1 repeat"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+        <ul class="marquee__inner central-line">
+          <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle11-d8031ef6.jpg 1x, /project-js-teamwork05/assets/Rectangle11@2x-8dddb439.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle11-d8031ef6.jpg"
+              width="282"
+              height="163"
+              alt="Project №4"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/first-screen-1-d26d999d.jpg 1x, /project-js-teamwork05/assets/first-screen-1@2x-b498ed1f.jpg 2x"
+              src="/project-js-teamwork05/assets/first-screen-1-d26d999d.jpg"
+              width="282"
+              height="163"
+              alt="Project №5"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle8-9243ccca.jpg 1x, /project-js-teamwork05/assets/Rectangle8@2x-76b5b3cf.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle8-9243ccca.jpg"
+              width="282"
+              height="163"
+              alt="Project №6"
+              loading="lazy"
+            />
+          </li>
+           <li class="marquee__line hidden-before-tablet">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle12-fe44e218.jpg 1x, /project-js-teamwork05/assets/Rectangle12@2x-0cf5bd3f.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle12-fe44e218.jpg"
+              width="282"
+              height="163"
+              alt="Project №10"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line hidden-before-tablet">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle11-d8031ef6.jpg 1x, /project-js-teamwork05/assets/Rectangle11@2x-8dddb439.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle11-d8031ef6.jpg"
+              width="282"
+              height="163"
+              alt="Project №4 repeat"
+              loading="lazy"
+            />
+          </li>
+           <li class="marquee__line hidden-before-desktop">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/first-screen-1-d26d999d.jpg 1x, /project-js-teamwork05/assets/first-screen-1@2x-b498ed1f.jpg 2x"
+              src="/project-js-teamwork05/assets/first-screen-1-d26d999d.jpg"
+              width="282"
+              height="163"
+              alt="Project №5"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line hidden-before-desktop">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle8-9243ccca.jpg 1x, /project-js-teamwork05/assets/Rectangle8@2x-76b5b3cf.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle8-9243ccca.jpg"
+              width="282"
+              height="163"
+              alt="Project №6"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+        <ul class="marquee__inner">
+          <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle9-31680d96.jpg 1x, /project-js-teamwork05/assets/Rectangle9@2x-286c8819.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle9-31680d96.jpg"
+              width="282"
+              height="163"
+              alt="Project №7"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle4-9433a0d5.jpg 1x, /project-js-teamwork05/assets/Rectangle4@2x-497f762a.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle4-9433a0d5.jpg"
+              width="282"
+              height="163"
+              alt="Project №8"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle5-bf63aee8.jpg 1x, /project-js-teamwork05/assets/Rectangle5@2x-5111e0cc.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle5-bf63aee8.jpg"
+              width="282"
+              height="163"
+              alt="Project №9"
+              loading="lazy"
+            />
+          </li>
+            <li class="marquee__line hidden-before-tablet">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle9-31680d96.jpg 1x, /project-js-teamwork05/assets/Rectangle9@2x-286c8819.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle9-31680d96.jpg"
+              width="282"
+              height="163"
+              alt="Project №7 repeat"
+              loading="lazy"
+            />
+          </li>
+          <li class="marquee__line hidden-before-tablet">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle4-9433a0d5.jpg 1x, /project-js-teamwork05/assets/Rectangle4@2x-497f762a.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle4-9433a0d5.jpg"
+              width="282"
+              height="163"
+              alt="Project №8 repeat"
+              loading="lazy"
+            />
+          </li>
+           <li class="marquee__line">
+            <img
+              class="covers-img"
+              srcset="/project-js-teamwork05/assets/Rectangle5-bf63aee8.jpg 1x, /project-js-teamwork05/assets/Rectangle5@2x-5111e0cc.jpg 2x"
+              src="/project-js-teamwork05/assets/Rectangle5-bf63aee8.jpg"
+              width="282"
+              height="163"
+              alt="Project №9 repeat"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+      <section class="reviews-section" id="benefits">
+  <div class="container">
+    <h2 class="reviews-title">Reviews</h2>
+    <div class="swiper reviews-wrapper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+      <div class="btn-wrapper">
+        <button class="swiper-button-prev reviews-btn" type="button">
+          <svg
+            class="reviews-btn-left-icon btn-icon"
+            width="24"
+            height="24"
+            aria-label="left arrow"
+          >
+            <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrows-left"></use>
+          </svg>
+        </button>
+        <button class="swiper-button-next reviews-btn" type="button">
+          <svg
+            class="reviews-btn-right-icon btn-icon"
+            width="24"
+            height="24"
+            aria-label="right arrow"
+          >
+            <use href="/project-js-teamwork05/assets/svg_sprite-opt-69bbcb32.svg#icon-arrows-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <!-- footer -->
+    <section class="" id="footer">
+  <div class="container footer-section">
+    <div class="footer-header-container">
+      <div class="work-together-frame">
+        <picture>
+          <source srcset="/project-js-teamwork05/assets/footer-img-ab19d321.jpg " media="(max-width: 767px)" />
+          <source srcset="/project-js-teamwork05/assets/footer-img@2x-ef20c2f0.jpg " media="(min-width: 768px)" />
+          <img
+            class="footer-header-photo"
+            src="/project-js-teamwork05/assets/footer-img-ab19d321.jpg"
+            alt="avatar-photo"
+            width="44"
+            height="44"
+          />
+        </picture>
+        <div class="footer-header-frame">
+          <h2 class="footer-header">
+            Let’s<span class="footer-header-accent"> work</span>
+          </h2>
+        </div>
+      </div>
+      <div class="footer-header-frame">
+        <h2 class="footer-header">together</h2>
+      </div>
+    </div>
+    <div class="footer-submit-form">
+      <form class="user-form">
+        <div class="footer-form-frame">
+          <input
+            class="footer-submit-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="clients@gmail.com"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            required
+            maxlength="37"
+          />
+          <svg class="icon-vector" width="245" height="2">
+            <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
+          </svg>
+          <p class="validation-text">Success!</p>
+        </div>
+        <div class="footer-form-frame">
+          <textarea
+          class="footer-submit-textarea"
+          name="comments"
+          id="comments"
+          placeholder="comments"
+          required
+          maxlength="200"
+        ></textarea>
+        <svg class="icon-vector" width="245" height="2">
+          <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
+        </svg>
+        </div>
+        <button class="footer-submit-btn" type="submit">Send</button>
+      </form>
+    </div>
+    <address class="footer-contacts-container">
+      <a class="footer-contacts" class="" href="mailto:lloydjefferson@gmail.com"
+        >lloydjefferson@gmail.com</a>
+      <a class="footer-contacts" href="tel:+3801111111111">+380 11 1111 11 11</a>
+    </address>
+    <div class="glass-effect"></div>
+  </section>
+  </div>
+  
+
+    
+    
+
+    
+  </body>
+</html>
