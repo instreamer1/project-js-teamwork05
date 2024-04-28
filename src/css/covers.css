@@ -11,11 +11,12 @@
 }
 
 .marquee__inner.hidden-before-desktop,
-.marquee__line.hidden-before-desktop {
+.marquee__line.hidden-before-desktop,
+.marquee__line.hidden-before-tablet {
     display: none;
 }
 
-.container.covers {
+.covers > .container {
     padding: 0;
 }
 
@@ -35,7 +36,7 @@
 }
 
 .marquee__line {
-    background-color: #FFDC00;
+    background-color: black;
     flex-shrink: 0;
     margin-right: 23px;
     display: flex;
@@ -58,4 +59,25 @@
     to {
         transform: translateX(-180%);
     }
+}
+
+/* .central-line {
+    margin-left: 32px;
+} */
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .marquee__line.hidden-before-tablet {
+        display: flex;
+    }
+    .background {    
+        background-size: contain;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+    .marquee__line.hidden-before-desktop {
+            display: flex;
+        }
 }

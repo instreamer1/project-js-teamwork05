@@ -97,3 +97,31 @@ function createMarkup(arr) {
     )
     .join('');
 }
+
+const coversSection = document.querySelector('.covers');
+
+// Function to check the visibility of a section in a viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to start animation
+function animateCovers() {
+  const marqueeLines = document.querySelectorAll('.marquee__line');
+  marqueeLines.forEach(line => {
+    line.style.animationName = 'marqueeLine';
+  });
+}
+
+// Page scroll event handler
+window.addEventListener('scroll', () => {
+  if (coversSection && isInViewport(coversSection)) {
+    animateCovers();
+  }
+});
