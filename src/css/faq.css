@@ -137,7 +137,7 @@
     margin-left: 200px;
   }
 }
-.list-item-text {
+.list-item .list-item-text {
   font-family: Inter Tight, Medium;
   font-weight: 500;
   font-size: 16px;
@@ -147,7 +147,7 @@
   margin-top: 16px;
 }
 @media screen and (min-width: 768px) {
-  .list-item-text {
+  .list-item .list-item-text {
     width: 656px;
     margin-top: 26px;
   }

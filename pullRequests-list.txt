@@ -3,3 +3,4 @@ https://github.com/inmate1/project-js-teamwork05/tree/sh-benefits
 https://github.com/inmate1/project-js-teamwork05/pull/8
 https://github.com/inmate1/project-js-teamwork05/pull/10
 https://github.com/inmate1/project-js-teamwork05/pull/13
+https://github.com/inmate1/project-js-teamwork05/pull/17
