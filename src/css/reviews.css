@@ -37,7 +37,7 @@
   
   .reviews-item {
     width: 343px;
-    height: 302px;
+    min-height: 358px;
     
     padding: 36px 24px;
   
