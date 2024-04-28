@@ -4,3 +4,8 @@ https://github.com/inmate1/project-js-teamwork05/pull/8
 https://github.com/inmate1/project-js-teamwork05/pull/10
 https://github.com/inmate1/project-js-teamwork05/pull/13
 https://github.com/inmate1/project-js-teamwork05/pull/17
+
+#Covers section
+https://github.com/inmate1/project-js-teamwork05/pull/12
+https://github.com/inmate1/project-js-teamwork05/pull/20
+https://github.com/inmate1/project-js-teamwork05/pull/22

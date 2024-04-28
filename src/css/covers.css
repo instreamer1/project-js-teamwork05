@@ -1,9 +1,11 @@
 .background {
-  max-width: 374.98px;
-  min-width: 320px;
-  margin: 0 auto;
-  background-image: url(../img/covers/background-covers.png);
-  background-position: top;
+
+    background-image: url(../img/covers/background-covers.png);
+    background-position: top;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 374.98px;
+
 }
 .covers > .container {
   padding: 0;
@@ -64,23 +66,30 @@
   }
 }
 
-/* .central-line {
-    margin-left: 32px;
-} */
-
 /* tablet */
 @media only screen and (min-width: 768px) {
-  .marquee__line.hidden-before-tablet {
-    display: flex;
-  }
-  .background {
-    background-size: contain;
-  }
+
+    .marquee__line.hidden-before-tablet {
+        display: flex;
+    }
+    .background {    
+        background-size: contain;
+        max-width: 768px;
+    }
+
 }
 
 /* desktop */
 @media only screen and (min-width: 1440px) {
-  .marquee__line.hidden-before-desktop {
-    display: flex;
-  }
+
+    .marquee__line.hidden-before-desktop {
+        display: flex;
+    }
+    .background {
+        background-repeat: no-repeat;
+        max-width: 1440px;
+    }
 }
+
+
+
