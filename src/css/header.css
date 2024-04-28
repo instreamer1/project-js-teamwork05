@@ -83,6 +83,7 @@ header .container {
 
 .burger-icon {
     display: none;
+    cursor: pointer;
 }
 
 /* Медіазапити */

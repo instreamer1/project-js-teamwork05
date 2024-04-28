@@ -9,4 +9,7 @@ function toggleMenu () {
     } else {
         menu.style.display = 'none';
     }
+    console.log('clickMenu');
 }
+
+
