@@ -1,6 +1,9 @@
 .background {
     background-image: url(../img/covers/background-covers.png);
     background-position: top;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 374.98px;
 }
 .covers > .container {
  padding: 0;
@@ -61,10 +64,6 @@
     }
 }
 
-/* .central-line {
-    margin-left: 32px;
-} */
-
 /* tablet */
 @media only screen and (min-width: 768px) {
     .marquee__line.hidden-before-tablet {
@@ -72,6 +71,7 @@
     }
     .background {    
         background-size: contain;
+        max-width: 768px;
     }
 }
 
@@ -82,5 +82,6 @@
     }
     .background {
         background-repeat: no-repeat;
+        max-width: 1440px;
     }
 }
