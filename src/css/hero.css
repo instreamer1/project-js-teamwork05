@@ -10,7 +10,10 @@
 }
 .hero-section {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+  max-width: 374.98px;
+  min-width: 320px;
+  margin: 0 auto;
   margin-bottom: 32px;
 }
 
@@ -178,6 +181,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+  }
   .hero-section > .hero-general-container {
     background-image: url(/img/hero/glass-effect-tablet.png);
     background-image: -webkit-image-set('/img/hero/glass-effect-tablet.webp');
@@ -236,6 +242,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .hero-section {
+    max-width: 1440px;
+  }
+
   .hero-section > .hero-general-container {
     background-image: url(/img/hero/bg-desktop.png);
     background-image: -webkit-image-set('/img/hero/bg-desktop.webp');

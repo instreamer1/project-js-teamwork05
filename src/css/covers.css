@@ -2,6 +2,9 @@
     background-image: url(../img/covers/background-covers.png);
     background-position: top;
 }
+.covers > .container {
+ padding: 0;
+}
 
 .hidden-title {
     display: none;
