@@ -16,6 +16,7 @@ const swiperReviews = new Swiper('.reviews-wrapper', {
     swipeHandler: '.reviews-item',
     speed: 300,
     spaceBetween: 20,
+    height: 302,
   
     keyboard: {
       enabled: true,
@@ -36,7 +37,7 @@ const swiperReviews = new Swiper('.reviews-wrapper', {
       1440: {
         slidesPerView: 4,
         slidesPerGroup: 1,
-        spaceBetween: 18,
+        spaceBetween: 16,
       },
     },
   
@@ -64,8 +65,8 @@ const selectors = {
 
 
 getReviews(currentId)
-.then ((data) => {console.log(data);
-    
+.then ((data) => {
+    selectors.container.innerHTML = '';
     selectors.container.insertAdjacentHTML("beforeend", createMarkup(data))
                 })
 .catch ((error) => {console.log(error);
