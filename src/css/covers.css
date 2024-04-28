@@ -1,64 +1,67 @@
 .background {
-    background-image: url(../img/covers/background-covers.png);
-    background-position: top;
+  max-width: 374.98px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-image: url(../img/covers/background-covers.png);
+  background-position: top;
 }
 .covers > .container {
- padding: 0;
+  padding: 0;
 }
 
 .hidden-title {
-    display: none;
+  display: none;
 }
 
 .marquee__inner.hidden-before-desktop,
 .marquee__line.hidden-before-desktop,
 .marquee__line.hidden-before-tablet {
-    display: none;
+  display: none;
 }
 
 .covers > .container {
-    padding: 0;
+  padding: 0;
 }
 
 .covers-img {
-    height: 100%;
-    width: 282px;
+  height: 100%;
+  width: 282px;
 }
 
 .marquee {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .marquee__inner {
-    margin-bottom: 23px;
-    display: flex;
-    transform: rotate(16deg);
+  margin-bottom: 23px;
+  display: flex;
+  transform: rotate(16deg);
 }
 
 .marquee__line {
-    background-color: black;
-    flex-shrink: 0;
-    margin-right: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 282px;
-    /* height: 162px; */
-    white-space: nowrap;
-    animation-name: marqueeLine;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+  background-color: black;
+  flex-shrink: 0;
+  margin-right: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 282px;
+  /* height: 162px; */
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes marqueeLine {
-    from {
-        transform: translateX(-20%);
-    }
+  from {
+    transform: translateX(-20%);
+  }
 
-    to {
-        transform: translateX(-180%);
-    }
+  to {
+    transform: translateX(-180%);
+  }
 }
 
 /* .central-line {
@@ -67,17 +70,17 @@
 
 /* tablet */
 @media only screen and (min-width: 768px) {
-    .marquee__line.hidden-before-tablet {
-        display: flex;
-    }
-    .background {    
-        background-size: contain;
-    }
+  .marquee__line.hidden-before-tablet {
+    display: flex;
+  }
+  .background {
+    background-size: contain;
+  }
 }
 
 /* desktop */
 @media only screen and (min-width: 1440px) {
-    .marquee__line.hidden-before-desktop {
-            display: flex;
-        }
+  .marquee__line.hidden-before-desktop {
+    display: flex;
+  }
 }
