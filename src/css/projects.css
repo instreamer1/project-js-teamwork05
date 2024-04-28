@@ -1,16 +1,16 @@
 .container {
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    margin-bottom: 96px;
+    padding-bottom: 96px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
-    margin-bottom: 164px;
+    padding-bottom: 164px;
   }
 }
 
@@ -24,6 +24,10 @@
   color: rgba(250, 250, 250, 0.4);
 
   margin-bottom: 32px;
+}
+
+.swiper-container {
+  overflow: hidden;
 }
 
 .card-wrapper {
@@ -171,6 +175,8 @@
   background-color: #242527;
 
   margin-bottom: 32px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -184,6 +190,9 @@
   .img-wrapper {
     margin-bottom: 0;
     padding: 120px 37px;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -220,7 +229,7 @@
   background-color: #1c1d20;
 }
 
-.button-disabled {
+.button:disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
@@ -230,11 +239,6 @@
   height: 24px;
 }
 
-.arrow-disabled {
+.button:disabled .arrow {
   stroke: #3b3b3b;
-}
-
-.hotel,
-.wallet {
-  display: none;
 }
