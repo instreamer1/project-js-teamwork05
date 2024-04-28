@@ -157,6 +157,10 @@ header .container {
 }
 
 .backdrop {
+    background-image: url(/img/hero/glass-effect-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     background-color: rgba(0, 0, 0, 0);
     width: 100vw;
     height: 100vh;
