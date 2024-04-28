@@ -39,13 +39,14 @@ header .container {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Add shadow */
     text-align: center;
-    /* color: aqua; */
+    cursor: pointer;
 }
 
 #menu-toggle {
     padding: 10px;
     text-align: center;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .nav-list {
