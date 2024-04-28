@@ -1,131 +1,135 @@
+
 .reviews-section {
-  max-width: 374.98px;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 64px 0 64px;
-}
-
-@media screen and (min-width: 768px) {
-  .reviews-section {
-    max-width: 768px;
-    padding: 144px 0 48px;
+    max-width: 374.98px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 64px 0 64px;
   }
-}
-
-@media screen and (min-width: 1440px) {
-  .reviews-section {
-    max-width: 1440px;
-    padding: 246px 0 82px;
+  
+  @media screen and (min-width: 768px) {
+    .reviews-section {
+      max-width: 768px;
+      padding: 144px 0 48px;
+    }
   }
-}
-
-.reviews-title {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-
-  color: #fafafa66;
-  margin-bottom: 32px;
-}
-
-.reviews-list {
-  margin-bottom: 32px;
-}
-
-.reviews-item {
-  width: 343px;
-  min-height: 302px;
-  padding: 36px 24px;
-
-  border: 1px solid #fafafa33;
-  border-radius: 20px;
-}
-
-@media screen and (min-width: 768px) {
+  
+  @media screen and (min-width: 1440px) {
+    .reviews-section {
+      max-width: 1440px;
+      padding: 246px 0 82px;
+    }
+  }
+  
+  .reviews-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  
+    color: #fafafa66;
+    margin-bottom: 32px;
+  }
+  
+  .reviews-list {
+    margin-bottom: 32px;
+  }
+  
   .reviews-item {
-    max-width: 344px;
+    width: 343px;
+    min-height: 302px;
+    padding: 36px 24px;
+  
+    border: 1px solid #fafafa33;
+    border-radius: 20px;
   }
-}
-
-.reviews-img {
-  border-radius: 10px;
-  margin-bottom: 36px;
-}
-
-.reviews-subtitle {
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-
-  color: var(--main-color);
-  margin-bottom: 8px;
-}
-
-.reviews-text {
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-
-  color: #fafafa99;
-}
-
-.btn-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.reviews-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 1px solid #fafafa80;
-  border-radius: 50%;
-  width: 52px;
-  height: 52px;
-  background-color: var(--bg-color);
-  transition: border-color var(--cubic);
-}
-
-@media screen and (min-width: 768px) {
+  
+  @media screen and (min-width: 768px) {
+    .reviews-item {
+      max-width: 344px;
+    }
+  }
+  
+  .reviews-img {
+    border-radius: 10px;
+    width: 48px;
+  height: 48px;
+    margin-bottom: 32px;
+  }
+  
+  .reviews-subtitle {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  
+    color: #fafafa;
+    margin-top: 8px;
+  }
+  
+  .reviews-text {
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  
+    color: #fafafa99;
+  }
+  
+  .btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
   .reviews-btn {
-    width: 66px;
-    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid #fafafa80;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background-color: var(--bg-color);
+    transition: border-color var(--cubic);
   }
-}
-
-@media screen and (min-width: 1440px) {
-  .reviews-btn {
-    width: 68px;
-    height: 68px;
+  
+  @media screen and (min-width: 768px) {
+    .reviews-btn {
+      width: 66px;
+      height: 66px;
+    }
   }
-}
-
-.btn-icon {
-  fill: transparent;
-  stroke: var(--main-color);
-  transition: stroke var(--cubic);
-}
-
-@media screen and (min-width: 768px) {
+  
+  @media screen and (min-width: 1440px) {
+    .reviews-btn {
+      width: 68px;
+      height: 68px;
+    }
+  }
+  
   .btn-icon {
-    width: 32px;
-    height: 32px;
+    fill: transparent;
+    stroke-width: 2px;
+  stroke: #fafafa;
+  
   }
-}
-
-.reviews-btn:disabled {
-  border: 1px solid #fafafa33;
-  cursor: no-drop;
-}
-
-.reviews-btn:disabled .btn-icon {
-  stroke: #fafafa33;
-}
-
-.reviews-plug {
-  margin: 0 auto;
-  font-size: 30px;
-}
+  
+  @media screen and (min-width: 768px) {
+    .btn-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  .reviews-btn:disabled {
+    border: 1px solid #fafafa33;
+    cursor: no-drop;
+  }
+  
+  .reviews-btn:disabled .btn-icon {
+    stroke: #fafafa33;
+  }
+  
+  .reviews-plug {
+    margin: 0 auto;
+    font-size: 30px;
+  }
