@@ -9,6 +9,17 @@ body .faq-conteiner {
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+  body .faq-conteiner {
+    padding-bottom: 96px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .faq-conteiner {
+    padding-bottom: 164px;
+  }
 }
 .list-item.ac.js-enabled .box-conteiner .box-icon {
   transform: none;
