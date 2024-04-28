@@ -4,14 +4,6 @@ const menu = document.getElementById('menu');
 menuToggle.addEventListener('click', toggleMenu);
 
 
-// Відкриття модального вікна
-const backdrop = document.querySelector('.backdrop');
-const burgerIcon = document.querySelector('.burger-icon');
-burgerIcon.addEventListener('click', openMenu);
-
-// Закриття модального вікна
-const closeButton = document.querySelector('.xclose-btn-mob');
-closeButton.addEventListener('click', closeMenu);
 
 
 
@@ -37,4 +29,5 @@ function openMenu() {
 function closeMenu() {
     backdrop.classList.remove('is-open');
     console.log('isClose');
+
 }
