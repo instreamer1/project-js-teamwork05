@@ -1,10 +1,23 @@
-.footer-section {
+.footer {
+  max-width: 374.98px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+  background-image: url(../img/work-together/footer-mobile-6db4ca3b.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top 0 right -30px;
+}
+
+/* .footer-section {
   position: relative;
   padding-bottom: 32px;
-}
+} */
 .glass-effect {
   position: absolute;
-  background-image: url(../img/glass-effect.png);
+  background-image: url(./img/glass-effect.png);
   background-position-x: 290px;
   background-repeat: repeat;
 
@@ -213,10 +226,17 @@
 /* Tablet */
 
 @media screen and (min-width: 768px) {
-  .footer-section {
+  .footer {
+    max-width: 768px;
     padding-top: 80px;
     padding-bottom: 169px;
+    background-position: top right -10px;
   }
+
+  /* .footer-section {
+    padding-top: 80px;
+    padding-bottom: 169px;
+  } */
 
   .footer-header {
     font-size: 64px;
@@ -255,36 +275,40 @@
   }
 
   .glass-effect {
-	background-repeat: repeat;
-	width: 187px;
-	left: 535px;
+    background-repeat: repeat;
+    width: 187px;
+    left: 535px;
   }
 }
 
 /* Desktop */
 
 @media screen and (min-width: 1440px) {
-	.footer-section{
-		padding: 0 196px;
-	}
+  .footer {
+    max-width: 1440px;
+  }
 
-	.footer-submit-input,
-	.footer-submit-textarea,
-	.icon-vector{
-		width: 390px;
-	}
+  /* .footer-section {
+    padding: 0 196px;
+  } */
 
-	.icon-vector{
-		left: -25px;
-	}
+  .footer-submit-input,
+  .footer-submit-textarea,
+  .icon-vector {
+    width: 390px;
+  }
 
-	.footer-submit-btn{
-		margin-left: 86px;
-	}
+  .icon-vector {
+    left: -25px;
+  }
 
-	.glass-effect {
-		background-repeat: repeat;
-		width: 390px;
-		left: 1050px;
-	  }
+  .footer-submit-btn {
+    margin-left: 86px;
+  }
+
+  .glass-effect {
+    background-repeat: repeat;
+    width: 390px;
+    left: 1050px;
+  }
 }
