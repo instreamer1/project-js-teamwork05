@@ -1,33 +1,46 @@
-<section id="about-me" class="abt-me-section">
-  <h2 class="visually-hidden">hidden</h2>
-  <div class="about-me-section-hero">
-    <div class="about-me-text">
-      <p id="paragraph" class="abt-me-paragraph">
-        I work with people all over the world to create impressive and
-        <span class="functional-span">functional</span>
-        <span class="websites-span">websites</span> that reflect each client's
-        unique personality.
-      </p>
-    </div>
-    <div class="abt-me-img">
-      <img
-        id="person-img"
-        class="person-img"
-        src="/src/img/image.jpg"
-        srcset="
-          /src/img/image.jpg   1x,
-          /src/img/image.jpg   2x,
-          /src/img/image-2.jpg 1x,
-          /src/img/image-2.jpg 2x
-        "
-        alt="Person"
-        width="343"
-      />
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/src/css/about-me.css" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="stylesheet" href="/src/css/base.css" />
+  </head>
+
+  <body>
+    <section id="about-me" class="abt-me-section">
+      <h2 class="visually-hidden">hidden</h2>
+      <div class="about-me-section-hero">
+        <div class="about-me-text">
+          <p id="paragraph" class="abt-me-paragraph">
+            I work with people all over the world to create impressive and
+            <span class="functional-span">functional</span>
+            <span class="websites-span">websites</span> that reflect each
+            client's unique personality.
+          </p>
+        </div>
+        <div class="abt-me-img">
+          <img
+            id="person-img"
+            class="person-img"
+            src="/src/img/image.jpg"
+            srcset="
+              /src/img/image.jpg   1x,
+              /src/img/image.jpg   2x,
+              /src/img/image-2.jpg 1x,
+              /src/img/image-2.jpg 2x
+            "
+            alt="Person"
+            width="343"
+          />
+        </div>
+      </div>
 
       <!--SLIDERS -->
-    
+
       <div class="div-content ac-content">
         <ul class="about-paragraph-list accordion-container">
           <li class="about-item ac">
@@ -66,7 +79,6 @@
           </li>
         </ul>
       </div>
-     
 
       <svg class="icon-stroke" width="343" height="40">
         <use href="./img/svg_sprite-opt.svg#icon-vector"></use>
@@ -141,18 +153,5 @@
         </div>
       </div>
     </section>
-
-    <link
-      rel="stylesheet"
-      href="/node_modules/accordion-js/dist/accordion.min.css"
-    />
-
-    <script type="module" src="/src/js/about-me.js"></script>
-
-    <!---->
-
-    <!-- <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.js" />
-
-    <script type="module" src="/src/js/about-me.js"></script> -->
   </body>
 </html>
