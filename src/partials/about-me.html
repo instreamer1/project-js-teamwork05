@@ -92,7 +92,7 @@
               <p class="abt-header">About me</p>
               <div class="arrow-btn">
                 <svg class="icon-arrow-up" width="40" height="40">
-                  <use href="../img/svg_sprite-opt.svg#icon-arrow-down"></use>
+                  <use href="./img/svg_sprite-opt.svg#icon-arrow-down"></use>
                 </svg>
               </div>
             </div>
@@ -145,7 +145,7 @@
         </svg> -->
 
       <svg class="icon-stroke" width="343" height="40">
-        <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
+        <use href="./img/svg_sprite-opt.svg#icon-vector"></use>
       </svg>
 
       <div class="div-content ac-content">
@@ -155,7 +155,7 @@
               <p class="abt-header">Role</p>
               <div class="arrow-btn">
                 <svg class="icon-arrow-down" width="18" height="18">
-                  <use href="../img/svg_sprite-opt.svg#icon-arrow-down"></use>
+                  <use href="./img/svg_sprite-opt.svg#icon-arrow-down"></use>
                 </svg>
               </div>
             </div>
@@ -168,7 +168,7 @@
         </ul>
       </div>
       <svg class="icon-stroke" width="343" height="40">
-        <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
+        <use href="./img/svg_sprite-opt.svg#icon-vector"></use>
       </svg>
 
       <!-- 
@@ -207,7 +207,7 @@
               <p class="abt-header">Education</p>
               <div class="arrow-btn">
                 <svg class="icon-arrow-down" width="18" height="18">
-                  <use href="../img/svg_sprite-opt.svg#icon-arrow-down"></use>
+                  <use href="./img/svg_sprite-opt.svg#icon-arrow-down"></use>
                 </svg>
               </div>
             </div>
@@ -223,11 +223,12 @@
         </ul>
       </div>
       <svg class="icon-stroke" width="343" height="40">
-        <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
+        <use href="./img/svg_sprite-opt.svg#icon-vector"></use>
       </svg>
 
       <!--APP BUTTONS-->
-      <div class="content swiper-container">
+
+      <!-- <div class="content swiper-container">
         <ul class="blocks-list" id="blocks-list">
           <li class="blocks-item swiper-slide">
             <button class="btn" type="button">HTML/CSS</button>
@@ -254,13 +255,27 @@
             <use href="../img/svg_sprite-opt.svg#icon-arrows-right"></use>
           </svg>
         </button>
+      </div> -->
+
+      <div class="container">
+        <div class="aboutme-skills-swiper">
+          <ul class="aboutme-skills">
+            <li class="aboutme-skill skill-accent">HTML/CSS</li>
+            <li class="aboutme-skill">JavaScript</li>
+            <li class="aboutme-skill">React</li>
+            <li class="aboutme-skill">Node.js</li>
+            <li class="aboutme-skill">React Native</li>
+            <li class="aboutme-skill">Soft scills</li>
+          </ul>
+          <button class="aboutme-skill-next-button" type="button">
+            <svg class="aboutme-skill-next">
+              <use href="./img/svg_sprite-opt.svg#icon-arrows-right"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
-    <!-- <script
-      type="module"
-      src="/node_modules/accordion-js/dist/accordion.min.js"
-    ></script> -->
     <link
       rel="stylesheet"
       href="/node_modules/accordion-js/dist/accordion.min.css"
@@ -268,11 +283,10 @@
 
     <script type="module" src="/src/js/about-me.js"></script>
 
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
-    ></script>
-    <!-- 
-    <script type="module" src="/src/js/about-me.js"></script> -->
+    <!---->
+
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.js" />
+
+    <script type="module" src="/src/js/about-me.js"></script>
   </body>
 </html>
