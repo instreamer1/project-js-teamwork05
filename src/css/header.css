@@ -171,7 +171,7 @@ header .container {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 1s cubic-bezier(.4,0,.2,1), visibility .25s cubic-bezier(.4,0,.2,1);
+    transition: opacity 0.75s cubic-bezier(.4,0,.2,1), visibility .25s cubic-bezier(.4,0,.2,1);
 }
 
 .mobile-menu-list {
