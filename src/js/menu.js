@@ -31,7 +31,17 @@ function toggleMenu() {
 function openMenu() {
   backdrop.classList.add('is-open');
   console.log('isOpen');
+
+  window.addEventListener('resize', closeMenuOnResize);
 }
+
+// Функція для автоматичного закриття модального вікна при зміні розміру екрану
+function closeMenuOnResize() {
+  if (window.innerWidth > 767) {
+    closeMenu();
+  }
+}
+
 
 // Функція для закриття модального вікна
 function closeMenu() {
