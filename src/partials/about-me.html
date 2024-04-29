@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="stylesheet" href="/src/css/about-me.css" />
-    <link rel="stylesheet" href="/src/css/reset.css" />
-    <link rel="stylesheet" href="/src/css/styles.css" />
-    <link rel="stylesheet" href="/src/css/base.css" />
-  </head>
 
-  <body>
     <section id="about-me" class="abt-me-section">
       <h2 class="visually-hidden">hidden</h2>
       <div class="about-me-section-hero">
@@ -26,12 +14,12 @@
           <img
             id="person-img"
             class="person-img"
-            src="./img/about-me/image.jpg"
+            src="../img/about-me/image.jpg"
             srcset="
-              /img/about-me/image.jpg       1x,
-              /img/about-me/image.jpg       2x,
-              /img/about-me/image-2.jpg     1x,
-              /img/about-me/image-2.jpg.jpg 2x
+              /img/about-me/image.jpg  1x,
+              /img/about-me/image.jpg   2x,
+              /img/about-me/image-2.jpg 1x,
+              /img/about-me/image-2.jpg 2x
             "
             alt="Person"
             width="343"
@@ -40,15 +28,22 @@
       </div>
 
       <!--SLIDERS -->
-
+  
       <div class="div-content ac-content">
         <ul class="about-paragraph-list accordion-container">
           <li class="about-item ac">
             <div class="div-header ac-trigger">
-              <p class="abt-header">About me</p>
+              About me
               <div class="arrow-btn">
-                <svg class="icon-arrow-up" width="40" height="40">
-                  <use href="./img/svg_sprite-opt.svg#icon-arrow-down"></use>
+                <svg class="icon-arrow-up" width="40" height="40"></svg>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+<use href="../img/svg_sprite-opt.svg#icon-arrow-up"></use>
                 </svg>
               </div>
             </div>
@@ -61,10 +56,9 @@
               unconventional, creative solutions to problems. I have a high
               level of analytical skills and am able to effectively solve even
               the most difficult tasks encountered on the way.
-            </p>
-          </li>
-          <li class="about-item">
-            <p class="about-item-paragraph">
+
+              <br /><br />
+
               Able to work both independently and in a team. I can effectively
               cooperate with colleagues, exchanging ideas and finding optimal
               solutions. Professional maturity allows you to calmly cope with
@@ -73,7 +67,7 @@
               I am always looking for opportunities for self-improvement. I
               actively study new technologies and practices to stay abreast of
               the latest innovations. I have a strong understanding of various
-              programming languages, frameworks and architectural concepts that
+              programming languages, frameworks, and architectural concepts that
               allow me to create efficient and scalable software.
             </p>
           </li>
@@ -81,17 +75,17 @@
       </div>
 
       <svg class="icon-stroke" width="343" height="40">
-        <use href="./img/svg_sprite-opt.svg#icon-vector"></use>
+        <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
       </svg>
 
       <div class="div-content ac-content">
         <ul class="role-list accordion-container">
           <li class="role-item ac">
             <div class="div-header ac-trigger">
-              <p class="abt-header">Role</p>
+              Role
               <div class="arrow-btn">
                 <svg class="icon-arrow-down" width="18" height="18">
-                  <use href="./img/svg_sprite-opt.svg#icon-arrow-down"></use>
+                  <use href="../img/svg_sprite-opt.svg#icon-arrow-down"></use>
                 </svg>
               </div>
             </div>
@@ -104,17 +98,17 @@
         </ul>
       </div>
       <svg class="icon-stroke" width="343" height="40">
-        <use href="./img/svg_sprite-opt.svg#icon-vector"></use>
+        <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
       </svg>
 
       <div class="div-content ac-content">
         <ul class="education-list accordion-container">
-          <li class="education-item ac">
+          <li class="role-item ac">
             <div class="div-header ac-trigger">
-              <p class="abt-header">Education</p>
+              Education
               <div class="arrow-btn">
                 <svg class="icon-arrow-down" width="18" height="18">
-                  <use href="./img/svg_sprite-opt.svg#icon-arrow-down"></use>
+                  <use href="../img/svg_sprite-opt.svg#icon-arrow-down"></use>
                 </svg>
               </div>
             </div>
@@ -130,28 +124,36 @@
         </ul>
       </div>
       <svg class="icon-stroke" width="343" height="40">
-        <use href="./img/svg_sprite-opt.svg#icon-vector"></use>
+        <use href="../img/svg_sprite-opt.svg#icon-vector"></use>
       </svg>
 
       <!--APP BUTTONS-->
+      <div class="content swiper-container">
+        <ul class="blocks-list" id="blocks-list">
+          <li class="blocks-item swiper-slide">
+            <button class="btn" type="button">HTML/CSS</button>
+          </li>
+          <li class="blocks-item swiper-slide">
+            <button class="btn" type="button">JavaScript</button>
+          </li>
+          <li class="blocks-item swiper-slide hidden">
+            <button class="btn" type="button">React</button>
+          </li>
+          <li class="blocks-item swiper-slide hidden">
+            <button class="btn" type="button">Node.js</button>
+          </li>
+          <li class="blocks-item swiper-slide hidden">
+            <button class="btn" type="button">React Native</button>
+          </li>
+          <li class="blocks-item swiper-slide hidden">
+            <button class="btn" type="button">Soft skills</button>
+          </li>
+        </ul>
 
-      <div class="container">
-        <div class="aboutme-skills-swiper">
-          <ul class="aboutme-skills">
-            <li class="aboutme-skill skill-accent">HTML/CSS</li>
-            <li class="aboutme-skill">JavaScript</li>
-            <li class="aboutme-skill">React</li>
-            <li class="aboutme-skill">Node.js</li>
-            <li class="aboutme-skill">React Native</li>
-            <li class="aboutme-skill">Soft scills</li>
-          </ul>
-          <button class="aboutme-skill-next-button" type="button">
-            <svg class="aboutme-skill-next">
-              <use href="./img/svg_sprite-opt.svg#icon-arrows-right"></use>
-            </svg>
-          </button>
-        </div>
+        <button class="arrow-right-btn" type="button">
+          <svg class="icon-arrows-right" width="28" height="28">
+            <use href="../img/svg_sprite-opt.svg#icon-arrows-right"></use>
+          </svg>
+        </button>
       </div>
     </section>
-  </body>
-</html>
