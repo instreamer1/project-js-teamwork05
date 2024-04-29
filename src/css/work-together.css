@@ -5,7 +5,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
-  background-image: url(./img/work-together/glass-effect-mob.png);
+  background-image: url(../img/work-together/glass-effect-mob.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top 0 right -15px;
@@ -211,7 +211,7 @@ select:-webkit-autofill::first-line {
 
 @media screen and (min-width: 768px) {
   .footer {
-    background-image: url(./img/work-together/glass-effect-tab.png);
+    background-image: url(../img/work-together/glass-effect-tab.png);
     max-width: 768px;
     padding-top: 80px;
     padding-bottom: 169px;
@@ -269,7 +269,7 @@ select:-webkit-autofill::first-line {
 
 @media screen and (min-width: 1440px) {
   .footer {
-    background-image: url(./img/work-together/glass-effect-desk.png);
+    background-image: url(../img/work-together/glass-effect-desk.png);
     background-position: top right 100px;
     max-width: 1440px;
   }
