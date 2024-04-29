@@ -159,14 +159,14 @@ button {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .person-img {
-        background-image: url(/src/img/image.jpg);
+        background-image: url(./img/about-me/image.jpg);
     }
 }
 
 @media screen and (min-width: 768px) {
     .person-img {
         min-width: 704px;
-        content: url(/src/img/image-2.jpg);
+        content: url(./img/about-me/image-2.jpg);
     }
 }
 
@@ -174,7 +174,7 @@ button {
     .person-img {
         min-width: 680px;
         min-height: 700px;
-        content: url(/src/img/image-2.jpg);
+        content: url(./img/about-me/image-2.jpg);
     }
 }
 
