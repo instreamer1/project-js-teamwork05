@@ -5,28 +5,10 @@
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
-  background-image: url(../img/work-together/footer-mobile-6db4ca3b.webp);
+  background-image: url(./img/work-together/glass-effect-mob.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top 0 right -30px;
-}
-
-/* .footer-section {
-  position: relative;
-  padding-bottom: 32px;
-} */
-.glass-effect {
-  position: absolute;
-  background-image: url(./img/glass-effect.png);
-  background-position-x: 290px;
-  background-repeat: repeat;
-
-  width: 75px;
-  height: 636px;
-  padding: 0;
-  top: 0;
-  left: 270px;
-  z-index: -1;
+  background-position: top 0 right -15px;
 }
 
 .footer-header-container {
@@ -85,13 +67,11 @@
   border: none;
   outline: transparent;
   background-color: transparent;
-
   color: rgba(250, 250, 250, 0.6);
   width: 100%;
   height: 24px;
   padding: 0;
   margin-bottom: 20px;
-
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -104,13 +84,11 @@
   resize: none;
   background-color: transparent;
   outline: transparent;
-
   color: rgba(250, 250, 250, 0.6);
   width: 100%;
   height: 24px;
   padding: 0;
   margin-bottom: 20px;
-
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -126,7 +104,6 @@
   background-color: rgba(237, 59, 68, 1);
   border-radius: 50%;
   margin-top: 32px;
-
   outline: none;
   border: none;
   color: #fafafa;
@@ -156,10 +133,8 @@
   padding: 10px 12px;
   justify-content: center;
   align-items: center;
-
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-
   font-size: 14px;
   color: #fafafa;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -179,7 +154,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-
   border-radius: 20px;
   border: 1px solid rgba(250, 250, 250, 0.1);
   background: #1c1d20;
@@ -188,9 +162,7 @@
 .modal-header {
   color: #fafafa;
   margin: 0 auto;
-
   text-align: center;
-  /* Mobile/Main text */
   font-family: 'Inter Tight';
   font-size: 20px;
   font-weight: 600;
@@ -200,7 +172,6 @@
 .modal-text {
   color: rgba(250, 250, 250, 0.6);
   text-align: center;
-  /* Mobile/Main text */
   font-family: 'Inter Tight';
   font-size: 16px;
   font-weight: 500;
@@ -223,20 +194,33 @@
   stroke: #fafafa;
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill::first-line,
+textarea:-webkit-autofill::first-line,
+select:-webkit-autofill::first-line {
+  color: rgba(250, 250, 250, 0.6);
+}
+
 /* Tablet */
 
 @media screen and (min-width: 768px) {
   .footer {
+    background-image: url(./img/work-together/glass-effect-tab.png);
     max-width: 768px;
     padding-top: 80px;
     padding-bottom: 169px;
     background-position: top right -10px;
   }
 
-  /* .footer-section {
-    padding-top: 80px;
-    padding-bottom: 169px;
-  } */
+  .footer-header-photo {
+    max-width: 70px;
+  }
 
   .footer-header {
     font-size: 64px;
@@ -285,12 +269,10 @@
 
 @media screen and (min-width: 1440px) {
   .footer {
+    background-image: url(./img/work-together/glass-effect-desk.png);
+    background-position: top right 100px;
     max-width: 1440px;
   }
-
-  /* .footer-section {
-    padding: 0 196px;
-  } */
 
   .footer-submit-input,
   .footer-submit-textarea,

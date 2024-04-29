@@ -37,7 +37,10 @@ async function handleSubmit(event) {
   await sendData(userData);
 }
 
+submitForm.removeEventListener('submit', handleSubmit);
+
 async function sendData(userData) {
+  let modalOpen = false;
   try {
     const response = await axios.post(`${BASE_URL}${END_POINT}`, userData);
     validationEmail.style.visibility = 'hidden';
@@ -53,13 +56,12 @@ async function sendData(userData) {
 		<h3 class="modal-header">Thank you for your interest in cooperation!</h3>
 		<p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
 		</div>`);
-
     modalSuccess.show();
-	const closeBtn = document.querySelector(".modal-close");
-	closeBtn.addEventListener('click', ()=> {
-		modalSuccess.close();
-	})
-	
+
+    const closeBtn = document.querySelector('.modal-close');
+    closeBtn.addEventListener('click', () => {
+      modalSuccess.close();
+    });
   } catch (error) {
     const instance = basicLightbox.create(`
 		<div class="modal modal-styles">
