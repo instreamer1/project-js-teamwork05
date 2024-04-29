@@ -1,15 +1,15 @@
-.container {
+.projects {
   padding-bottom: 64px;
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  .projects {
     padding-bottom: 96px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .container {
+  .projects {
     padding-bottom: 164px;
   }
 }
