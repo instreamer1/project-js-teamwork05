@@ -5,7 +5,6 @@ const menu = document.getElementById('menu');
 menuToggle.addEventListener('click', toggleMenu);
 menu.addEventListener('click', toggleMenu);
 
-
 // Відкриття модального вікна
 const backdrop = document.querySelector('.backdrop');
 const burgerIcon = document.querySelector('.burger-icon');
@@ -42,9 +41,12 @@ function closeMenuOnResize() {
   }
 }
 
-
 // Функція для закриття модального вікна
 function closeMenu() {
   backdrop.classList.remove('is-open');
   console.log('isClose');
 }
+
+menu.addEventListener('mouseout', function () {
+  toggleMenu();
+});

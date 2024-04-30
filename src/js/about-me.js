@@ -5,7 +5,7 @@ import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 const accordionPanels = document.querySelector('.accordion-panel');
 const firstContainer = document.querySelector('.about-us');
-const firstIcon = document.querySelector('.mobile-open-ac');
+const firstIcon = document.querySelector('.mobile-open-us');
 
 accordionPanels.style.maxHeight = '100%';
 firstContainer.classList.add('active');
@@ -15,7 +15,7 @@ accordionHeaders.forEach(header => {
   header.addEventListener('click', function () {
     const accordionItem = header.closest('.about-us');
     const panel = accordionItem.querySelector('.accordion-panel');
-    const icon = header.querySelector('.mobile-open-ac');
+    const icon = header.querySelector('.mobile-open-us');
 
     accordionItem.classList.toggle('active');
 
