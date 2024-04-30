@@ -1,0 +1,83 @@
+.modal-backdrop {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(15, 15, 16, 0.6);
+	opacity: 1;
+	pointer-events: all;
+	transition: opacity 0.3s ease-in-out;
+	visibility: visible;
+  }
+
+  .is-hidden{
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+	pointer-events: none;
+  }
+
+  .modal {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+	width: 343px;
+	display: inline-flex;
+	padding: 64px 32px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	border-radius: 20px;
+	border: 1px solid rgba(250, 250, 250, 0.1);
+	background: #1c1d20;
+
+	
+  }
+  
+  .modal-header {
+	color: #fafafa;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Inter Tight';
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+  }
+  
+  .modal-text {
+	color: rgba(250, 250, 250, 0.6);
+	text-align: center;
+	font-family: 'Inter Tight';
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+  }
+  
+  .modal-close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+  }
+  
+  .modal-close .icon {
+	width: 22px;
+	height: 22px;
+	stroke: #fafafa;
+  }
+
+
+  /* Tablet */
+
+  @media screen and (min-width: 768px) {
+	.modal {
+		width: 492px;
+	  }
+  }

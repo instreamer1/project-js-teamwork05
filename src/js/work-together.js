@@ -2,6 +2,8 @@ import axios from 'axios';
 import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 
+import { openModal } from './modal'
+
 const BASE_URL = 'https://portfolio-js.b.goit.study/api';
 const END_POINT = '/requests';
 
@@ -37,37 +39,14 @@ async function handleSubmit(event) {
   await sendData(userData);
 }
 
-submitForm.removeEventListener('submit', handleSubmit);
-
 async function sendData(userData) {
   try {
     const response = await axios.post(`${BASE_URL}${END_POINT}`, userData);
     validationEmail.style.visibility = 'hidden';
     footerFormFrame.style.borderBottomColor = 'rgba(250, 250, 250, 0.20)';
     submitForm.reset();
-    const modalSuccess = basicLightbox.create(`
-		<div class="modal modal-styles">
-		<button type="button" class="modal-close">
-		  <svg class="icon" width="22" height="22">
-		    <use href="../img/svg_sprite-opt.svg#icon-close"></use>
-		  </svg>
-		</button>
-		<h3 class="modal-header">Thank you for your interest in cooperation!</h3>
-		<p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
-		</div>`);
-    modalSuccess.show();
-
-    // Проблема з закриттям модалки через кнопку 'Escape'
-    document.addEventListener('keydown', event => {
-      if (event.code === 'Escape' && modalSuccess.visible()) {
-        modalSuccess.close();
-      }
-    });
-
-    const closeBtn = document.querySelector('.modal-close');
-    closeBtn.addEventListener('click', () => {
-      modalSuccess.close();
-    });
+    openModal();
+    
   } catch (error) {
     const instance = basicLightbox.create(`
 		<div class="modal modal-styles">
