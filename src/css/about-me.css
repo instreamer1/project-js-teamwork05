@@ -251,7 +251,6 @@
     min-width: 0;
     width: 260px;
 
-    /* overflow: hidden; */
 }
 
 .aboutme-swiper-wrapper li {
@@ -343,7 +342,7 @@
 
 .swiper-button-lock {
     display: flex !important;
-}
+} 
 
 /* accordion */
 .aboutme-item.js-enabled .aboutme-item-panel {
