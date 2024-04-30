@@ -8,10 +8,23 @@ const BASE_URL = 'https://portfolio-js.b.goit.study/api';
 const END_POINT = '/requests';
 
 const submitForm = document.querySelector('.user-form');
+const emailInput = document.querySelector('.footer-submit-input');
 const validationEmail = document.querySelector('.validation-text');
 const footerFormFrame = document.querySelector('.footer-form-frame');
 
 submitForm.addEventListener('submit', handleSubmit);
+
+emailInput.addEventListener('input', () => {
+  limitText(emailInput, 40); 
+});
+
+function limitText(input, maxLength) {
+  if (input.value.length > maxLength) {
+    const originalText = input.value.substring(0, maxLength); 
+    const encryptedText = input.value.substring(maxLength).replace(/./g, '.'); 
+    input.value = originalText + encryptedText;
+  }
+}
 
 async function handleSubmit(event) {
   event.preventDefault();
