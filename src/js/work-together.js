@@ -56,26 +56,18 @@ async function sendData(userData) {
 		<p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
 		</div>`);
     modalSuccess.show();
-    
-    const closeBtn = document.querySelector('.modal-close');
-    closeBtn.addEventListener('click', () => {
+
+    // Проблема з закриттям модалки через кнопку 'Escape'
+    document.addEventListener('keydown', event => {
+      if (event.code === 'Escape' && modalSuccess.visible()) {
         modalSuccess.close();
+      }
     });
 
-// Проблема з закриттям модалки через кнопку 'Escape'
-  document.addEventListener('keydown', (event) => {
-      console.log(event.code);
-      if (event.code === 'Escape') {
-        
-          modalSuccess.close();
-      }
-  });
-  //   modalSuccess.element().addEventListener('keydown', (event) => {
-  //     if (event.code === 'Escape') {
-  //         modalSuccess.close();
-  //     }
-  // });
-    
+    const closeBtn = document.querySelector('.modal-close');
+    closeBtn.addEventListener('click', () => {
+      modalSuccess.close();
+    });
   } catch (error) {
     const instance = basicLightbox.create(`
 		<div class="modal modal-styles">
