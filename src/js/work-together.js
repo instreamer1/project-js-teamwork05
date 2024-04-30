@@ -40,7 +40,6 @@ async function handleSubmit(event) {
 submitForm.removeEventListener('submit', handleSubmit);
 
 async function sendData(userData) {
-  let modalOpen = false;
   try {
     const response = await axios.post(`${BASE_URL}${END_POINT}`, userData);
     validationEmail.style.visibility = 'hidden';
@@ -48,7 +47,7 @@ async function sendData(userData) {
     submitForm.reset();
     const modalSuccess = basicLightbox.create(`
 		<div class="modal modal-styles">
-		<button class="modal-close" type="button">
+		<button type="button" class="modal-close">
 		  <svg class="icon" width="22" height="22">
 		    <use href="../img/svg_sprite-opt.svg#icon-close"></use>
 		  </svg>
@@ -57,11 +56,26 @@ async function sendData(userData) {
 		<p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
 		</div>`);
     modalSuccess.show();
-
+    
     const closeBtn = document.querySelector('.modal-close');
     closeBtn.addEventListener('click', () => {
-      modalSuccess.close();
+        modalSuccess.close();
     });
+
+// Проблема з закриттям модалки через кнопку 'Escape'
+  document.addEventListener('keydown', (event) => {
+      console.log(event.code);
+      if (event.code === 'Escape') {
+        
+          modalSuccess.close();
+      }
+  });
+  //   modalSuccess.element().addEventListener('keydown', (event) => {
+  //     if (event.code === 'Escape') {
+  //         modalSuccess.close();
+  //     }
+  // });
+    
   } catch (error) {
     const instance = basicLightbox.create(`
 		<div class="modal modal-styles">
