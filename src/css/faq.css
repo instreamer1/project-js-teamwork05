@@ -111,7 +111,7 @@
 .list .list-item .list-item-title {
   display: flex;
   justify-content: space-between;
-  font-family: var(--font-family);
+  font-family: Inter Tight, Medium;
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
