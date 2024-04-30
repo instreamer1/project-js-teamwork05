@@ -118,6 +118,7 @@
   letter-spacing: -0.02em;
   color: rgb(250, 250, 250);
   padding: 0;
+  text-transform: none;
 }
 
 .list-item .list-item-title .box-conteiner {
