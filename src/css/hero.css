@@ -10,7 +10,9 @@
 }
 .hero-section {
   position: relative;
-  /* width: 100%; */
+
+  width: 100%;
+
   /* max-width: 374.98px;
   min-width: 320px; */
   margin: 0 auto;

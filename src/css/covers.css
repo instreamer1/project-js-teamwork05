@@ -1,11 +1,9 @@
 .background {
-
-    background-image: url(../img/covers/background-covers.png);
-    background-position: top;
-    margin: 0 auto;
-    min-width: 320px;
-    max-width: 374.98px;
-
+  background-image: url(../img/covers/background-covers.png);
+  background-position: top;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 374.98px;
 }
 .covers > .container {
   padding: 0;
@@ -29,15 +27,25 @@
   height: 100%;
   width: 282px;
 }
-
-.marquee {
+.content-marguee {
   overflow: hidden;
+  /* max-width: 375px; */
+  height: 508px;
+  position: relative;
+  overflow: hidden;
+
+}
+.marquee {
+  width: fit-content;
+  transform: rotate(17deg);
+  position: absolute;
+  top: 50px;
 }
 
 .marquee__inner {
   margin-bottom: 23px;
   display: flex;
-  transform: rotate(16deg);
+  /* transform: rotate(16deg); */
 }
 
 .marquee__line {
@@ -68,28 +76,35 @@
 
 /* tablet */
 @media only screen and (min-width: 768px) {
-
-    .marquee__line.hidden-before-tablet {
-        display: flex;
-    }
-    .background {    
-        background-size: contain;
-        max-width: 768px;
-    }
-
+  .marquee__line.hidden-before-tablet {
+    display: flex;
+  }
+  .background {
+    background-size: contain;
+    max-width: 768px;
+  }
+  .marquee {
+    height: max-content;
+    top: 150px;
+  }
 }
 
 /* desktop */
 @media only screen and (min-width: 1440px) {
+  .marquee__line.hidden-before-desktop {
+    display: flex;
+  }
+  .background {
+    background-repeat: no-repeat;
+    max-width: 1440px;
+  }
 
-    .marquee__line.hidden-before-desktop {
-        display: flex;
-    }
-    .background {
-        background-repeat: no-repeat;
-        max-width: 1440px;
-    }
+  .marquee {
+    top: 60px;
+  }
+
+  .marquee__line {
+    display: flex;
+    width: max-content;
+  }
 }
-
-
-
