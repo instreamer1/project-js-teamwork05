@@ -1,12 +1,13 @@
 .background {
   background-image: url(../img/covers/background-covers.png);
-  background-position: top;
+  background-position: center center;
   margin: 0 auto;
   min-width: 320px;
-  max-width: 374.98px;
+  /* max-width: 374.98px; */
 }
 .covers > .container {
   padding: 0;
+  max-width: 100%;
 }
 
 .hidden-title {
@@ -33,13 +34,13 @@
   height: 508px;
   position: relative;
   overflow: hidden;
-
 }
 .marquee {
   width: fit-content;
   transform: rotate(17deg);
   position: absolute;
-  top: 50px;
+  top: 30px;
+  left: 30px;
 }
 
 .marquee__inner {
@@ -76,35 +77,56 @@
 
 /* tablet */
 @media only screen and (min-width: 768px) {
+  .covers > .container {
+    max-width: 100%;
+  }
   .marquee__line.hidden-before-tablet {
     display: flex;
   }
   .background {
     background-size: contain;
-    max-width: 768px;
+    /* max-width: 768px; */
   }
   .marquee {
     height: max-content;
     top: 150px;
+    left: -40px;
   }
 }
-
+@media only screen and (min-width: 1000px) {
+  .marquee {
+    top: 20px;
+    left: -120px;
+  }
+}
 /* desktop */
 @media only screen and (min-width: 1440px) {
+  .covers > .container {
+    max-width: 100%;
+  }
   .marquee__line.hidden-before-desktop {
     display: flex;
   }
   .background {
     background-repeat: no-repeat;
-    max-width: 1440px;
+    /* max-width: 1440px; */
   }
 
   .marquee {
-    top: 0px;
+    top: 100px;
+
+    left: 30px;
   }
 
   .marquee__line {
     display: flex;
     width: max-content;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .marquee {
+    top: 20px;
+    left: -120px;
   }
 }
