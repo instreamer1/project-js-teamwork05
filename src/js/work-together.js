@@ -57,7 +57,7 @@ async function sendData(userData) {
   try {
     const response = await axios.post(`${BASE_URL}${END_POINT}`, userData);
     validationEmail.style.visibility = 'hidden';
-    footerFormFrame.style.borderBottomColor = 'rgba(250, 250, 250, 0.20)';
+    document.documentElement.style.setProperty('--color1', '#fafafa');
     submitForm.reset();
     openModal();
     
