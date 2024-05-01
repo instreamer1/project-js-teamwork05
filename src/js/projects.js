@@ -27,3 +27,35 @@ const swiper = new Swiper('.swiper-container', {
     },
   },
 });
+
+const firstSlide = document.getElementById('slide1');
+const secondSlide = document.getElementById('slide2');
+const thirdSlide = document.getElementById('slide3');
+
+firstSlide.addEventListener('keydown', function (event) {
+  if (event.key === 'Tab' && !event.shiftKey) {
+    event.preventDefault();
+    swiper.slideNext();
+  }
+});
+
+secondSlide.addEventListener('keydown', function (event) {
+  if (event.key === 'Tab' && event.shiftKey) {
+    event.preventDefault();
+    swiper.slidePrev();
+  } else if (event.key === 'Tab' && !event.shiftKey) {
+    event.preventDefault();
+    swiper.slideNext();
+  }
+});
+
+thirdSlide.addEventListener('keydown', function (event) {
+  if (event.key === 'Tab' && event.shiftKey) {
+    event.preventDefault();
+    swiper.slidePrev();
+  }
+});
+
+
+
+
