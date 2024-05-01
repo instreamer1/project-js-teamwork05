@@ -1,186 +1,185 @@
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    z-index: 100; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  z-index: 100;
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-items: flex-start;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  padding: 10px 20px;
 }
 
 .logo {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .logo-img {
-    border-radius: 18px;
+  border-radius: 18px;
 }
 
 #menu {
-    list-style-type: none;
-    margin-top: 8px;
-    padding: 0;
-    display: none;      /* Hide menu by default */
-    position: absolute;
-    /* Position menu below the nav */
-    right: auto;
-    left: auto;
-    background-color: rgba(255, 255, 255, 0); /* Transparent background */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Add shadow */
-    text-align: center;
-    cursor: pointer;
+  list-style-type: none;
+  margin-top: 8px;
+  padding: 0;
+  display: none; /* Hide menu by default */
+  position: absolute;
+  /* Position menu below the nav */
+  right: auto;
+  left: auto;
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Add shadow */
+  text-align: center;
+  cursor: pointer;
 }
 
 #menu-toggle {
-    padding: 10px;
-    text-align: center;
-    text-decoration: underline;
-    cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .nav-list {
-    display: block;
-    margin-bottom: 10px; /* Add spacing between menu items */
+  display: block;
+  margin-bottom: 10px; /* Add spacing between menu items */
 }
 
 .nav-list-link {
-    text-decoration: none;
-    transition: color 0.3s;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .nav-list-link:hover {
-    color: #666;
+  color: #666;
 }
 
-.heder-btn, .mobile-heder-btn {
-    background-color: #ED3B44;
-    border-radius: 60px;
-    padding: 18px 24px;
-    width: 163px;
-    height: 55px;
-    letter-spacing: -0.02em;
-    transition: background-color 0.3s;
+.heder-btn,
+.mobile-heder-btn {
+  background-color: #ed3b44;
+  border-radius: 60px;
+  padding: 14px 24px;
+  width: 163px;
+  height: 55px;
+  letter-spacing: -0.02em;
+  transition: background-color 0.3s;
 }
 
 .heder-btn:hover {
-    background-color: #ED3B44;
+  background-color: #ed3b44;
 }
 
 #menu:target ul {
-    display: block;
+  display: block;
 }
 
 .burger-icon {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 /* Медіазапити */
 
 @media (max-width: 767px) {
-    /* Стилі для мобільних пристроїв */
+  /* Стилі для мобільних пристроїв */
 
-    .heder-btn,
-    #menu-toggle {
-        display: none; /* Приховує кнопку та текст Меню для мобільних пристроїв */
-    }
+  .heder-btn,
+  #menu-toggle {
+    display: none; /* Приховує кнопку та текст Меню для мобільних пристроїв */
+  }
 
-
-    /* Стилі для відображення меню при кліку на іконку бургер-меню */
-    #menu:target {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 1000;
-    }
-
-        .burger-icon {
-        display: block;
-    }
-
-
-    #menu:target ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-
-/* Модальне вікно для бургер-меню */
-
-.mobile-menu {
+  /* Стилі для відображення меню при кліку на іконку бургер-меню */
+  #menu:target {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+
+  #menu:target ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform .3s ease, visibility .3s ease;
-    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Модальне вікно для бургер-меню */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, visibility 0.3s ease;
+  justify-content: space-between;
 }
 
 .mobile-menu-btn {
-    position: absolute;
-    top: 32px;
-    right: 16px;
-    background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .backdrop.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
 }
 
 .backdrop {
-    background-image: url(/img/hero/glass-effect-mobile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    background-color: rgba(0, 0, 0, 0);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: opasity .3s ease-in, visibility .3s ease-in;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 0.75s cubic-bezier(.4,0,.2,1), visibility .25s cubic-bezier(.4,0,.2,1);
+  background-image: url(/img/hero/glass-effect-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-color: rgba(0, 0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opasity 0.3s ease-in, visibility 0.3s ease-in;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-list {
-    text-decoration: underline;
-    text-align: center;
-    padding-top: 50%;
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 50%;
 }
 
 .mobile-heder-btn {
-    position: fixed;
-    bottom: 64px;
+  position: fixed;
+  bottom: 64px;
 }
