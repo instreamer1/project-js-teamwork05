@@ -70,7 +70,7 @@
   .modal-close .icon {
 	width: 22px;
 	height: 22px;
-	stroke: #fafafa;
+	stroke: var(--color1);
   }
 
 
