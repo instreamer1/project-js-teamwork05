@@ -83,6 +83,10 @@
     background-size: contain;
     max-width: 768px;
   }
+  .marquee {
+    height: max-content;
+    top: 150px;
+  }
 }
 
 /* desktop */
@@ -96,7 +100,6 @@
   }
 
   .marquee {
-    height: max-content;
     top: 60px;
   }
 
