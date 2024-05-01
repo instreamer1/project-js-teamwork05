@@ -10,12 +10,26 @@ const END_POINT = '/requests';
 const submitForm = document.querySelector('.user-form');
 const emailInput = document.querySelector('.footer-submit-input');
 const validationEmail = document.querySelector('.validation-text');
-const footerFormFrame = document.querySelector('.footer-form-frame');
+const footerFormFrame = document.querySelector('#icon-vector');
 
 submitForm.addEventListener('submit', handleSubmit);
 
 emailInput.addEventListener('input', () => {
   limitText(emailInput, 40); 
+});
+
+emailInput.addEventListener('input', function(event) {
+  if (emailInput.value === "" || !emailInput.checkValidity()) {
+    document.documentElement.style.setProperty('--color1', 'rgba(231, 74, 59, 1)');
+    validationEmail.textContent = 'Invalid email, try again';
+    validationEmail.style.visibility = 'visible';
+    validationEmail.style.color = 'rgba(231, 74, 59, 1)';
+  } if(emailInput.checkValidity()) {
+    document.documentElement.style.setProperty('--color1', 'rgba(60, 188, 129, 1)');
+    validationEmail.textContent = 'Success!';
+    validationEmail.style.visibility = 'visible';
+    validationEmail.style.color = 'rgba(60, 188, 129, 1)';
+  }
 });
 
 function limitText(input, maxLength) {
@@ -32,23 +46,10 @@ async function handleSubmit(event) {
   const userEmail = event.currentTarget.elements.email.value.trim();
   const userComments = event.currentTarget.elements.comments.value.trim();
 
-  if (userEmail) {
-    validationEmail.style.visibility = 'visible';
-    validationEmail.style.color = 'rgba(60, 188, 129, 1)';
-    footerFormFrame.style.borderBottomColor = 'rgba(60, 188, 129, 1)';
-  }
-  if (!userEmail) {
-    validationEmail.textContent = 'Invalid email, try again';
-    validationEmail.style.visibility = 'visible';
-    validationEmail.style.color = 'rgba(231, 74, 59, 1)';
-    footerFormFrame.style.borderBottomColor = 'rgba(231, 74, 59, 1)';
-  }
-
   const userData = {
     email: userEmail,
     comment: userComments,
   };
-
   await sendData(userData);
 }
 
