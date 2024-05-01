@@ -63,8 +63,6 @@ const selectors = {
 
 getReviews(currentId)
   .then(data => {
-    console.log(data);
-
     selectors.container.insertAdjacentHTML('beforeend', createMarkup(data));
   })
   .catch(error => {
@@ -106,7 +104,8 @@ function isInViewport(element) {
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }

@@ -37,11 +37,10 @@
 .reviews-item {
   width: 343px;
   min-height: 358px;
-
   padding: 36px 24px;
-
   border: 1px solid #fafafa33;
   border-radius: 20px;
+  margin-right: 16px;
 }
 
 @media screen and (min-width: 768px) {

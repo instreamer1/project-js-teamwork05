@@ -44,9 +44,4 @@ function closeMenuOnResize() {
 // Функція для закриття модального вікна
 function closeMenu() {
   backdrop.classList.remove('is-open');
-  console.log('isClose');
 }
-
-menu.addEventListener('mouseout', function () {
-  toggleMenu();
-});

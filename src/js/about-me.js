@@ -2,8 +2,8 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
-const accordionHeaders = document.querySelectorAll('.accordion-header');
 const accordionPanels = document.querySelector('.accordion-panel');
+const accordionHeaders = document.querySelectorAll('.accordion-header');
 const firstContainer = document.querySelector('.about-us');
 const firstIcon = document.querySelector('.mobile-open-us');
 
