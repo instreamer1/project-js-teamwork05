@@ -2,11 +2,12 @@
   background-image: url(../img/covers/background-covers.png);
   background-position: top;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 374.98px;
+  /* min-width: 320px;
+  max-width: 374.98px; */
 }
-.covers > .container {
+.covers {
   padding: 0;
+  width: 100vw;
 }
 
 .hidden-title {
@@ -19,16 +20,11 @@
   display: none;
 }
 
-.covers > .container {
-  padding: 0;
-}
-
 .covers-img {
   height: 100%;
   width: 282px;
 }
 .content-marguee {
-  overflow: hidden;
   /* max-width: 375px; */
   height: 508px;
   position: relative;
@@ -39,7 +35,7 @@
   width: fit-content;
   transform: rotate(17deg);
   position: absolute;
-  top: 50px;
+  top: 10px;
 }
 
 .marquee__inner {
@@ -55,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 282px;
+  /* width: 282px; */
   /* height: 162px; */
   white-space: nowrap;
   animation-name: marqueeLine;
@@ -81,12 +77,17 @@
   }
   .background {
     background-size: contain;
-    max-width: 768px;
+    /* max-width: 768px; */
   }
   .marquee {
     height: max-content;
-    top: 150px;
   }
+    .content-marguee {
+      height: 960px;
+    }
+            .covers-img {
+              width: 544px;
+            }
 }
 
 /* desktop */
@@ -96,11 +97,11 @@
   }
   .background {
     background-repeat: no-repeat;
-    max-width: 1440px;
+    /* max-width: 1440px; */
   }
 
   .marquee {
-    top: 0px;
+    top: 100px;
   }
 
   .marquee__line {
