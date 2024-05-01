@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="footer-submit-form">
-      <form class="user-form">
+      <form class="user-form" id="user-form">
         <div class="footer-form-frame">
           <input
             class="footer-submit-input"
@@ -36,7 +36,7 @@
           <svg class="icon-vector" width="245" height="2">
             <use href="./img/svg_sprite-opt.svg#icon-vector"></use>
           </svg>
-          <p class="validation-text">Success!</p>
+          <p class="validation-text"></p>
         </div>
         <div class="footer-form-frame">
           <textarea
@@ -48,10 +48,10 @@
           maxlength="200"
         ></textarea>
         <svg class="icon-vector" width="245" height="2">
-          <use href="./img/svg_sprite-opt.svg#icon-vector"></use>
+          <use id="icon-vector" href="./img/svg_sprite-opt.svg#icon-vector"></use>
         </svg>
         </div>
-        <button class="footer-submit-btn" type="submit">Send</button>
+        <button class="footer-submit-btn" type="submit" aria-label="Send button">Send</button>
       </form>
     </div>
     <address class="footer-contacts-container">

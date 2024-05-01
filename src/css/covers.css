@@ -1,13 +1,17 @@
 .background {
   background-image: url(../img/covers/background-covers.png);
-  background-position: top;
+  background-position: center center;
   margin: 0 auto;
+
   /* min-width: 320px;
   max-width: 374.98px; */
+
 }
 .covers {
   padding: 0;
+
   width: 100vw;
+n
 }
 
 .hidden-title {
@@ -30,13 +34,14 @@
   height: 508px;
   position: relative;
   overflow: hidden;
-
 }
 .marquee {
   width: fit-content;
   transform: rotate(17deg);
   position: absolute;
+
   top: 10px;
+
 }
 
 .marquee__inner {
@@ -73,6 +78,9 @@
 
 /* tablet */
 @media only screen and (min-width: 768px) {
+  .covers > .container {
+    max-width: 100%;
+  }
   .marquee__line.hidden-before-tablet {
     display: flex;
   }
@@ -82,6 +90,8 @@
   }
   .marquee {
     height: max-content;
+
+
   }
     .content-marguee {
       height: 960px;
@@ -90,9 +100,11 @@
               width: 544px;
             }
 }
-
 /* desktop */
 @media only screen and (min-width: 1440px) {
+  .covers > .container {
+    max-width: 100%;
+  }
   .marquee__line.hidden-before-desktop {
     display: flex;
   }
@@ -103,6 +115,7 @@
 
   .marquee {
     top: 100px;
+
   }
 
   .marquee__line {
@@ -112,4 +125,11 @@
     .marquee__inner.top-right {
       display: flex;
     }
+}
+
+@media only screen and (min-width: 1600px) {
+  .marquee {
+    top: 60px;
+    left: -120px;
+  }
 }

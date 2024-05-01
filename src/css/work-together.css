@@ -122,6 +122,8 @@
   position: absolute;
   top: 40px;
   left: 0px;
+
+  stroke: var(--color1);
 }
 
 .footer-contacts-container {
