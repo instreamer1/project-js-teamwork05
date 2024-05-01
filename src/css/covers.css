@@ -29,7 +29,7 @@ n
   height: 100%;
   width: 282px;
 }
-.content-marguee {
+
   /* max-width: 375px; */
   height: 508px;
   position: relative;
@@ -39,8 +39,10 @@ n
   width: fit-content;
   transform: rotate(17deg);
   position: absolute;
+x
 
   top: 10px;
+
 
 }
 
@@ -81,6 +83,11 @@ n
   .covers > .container {
     max-width: 100%;
   }
+
+  .content-marguee {
+    /* height: 960px; */
+  }
+
   .marquee__line.hidden-before-tablet {
     display: flex;
   }
@@ -90,7 +97,6 @@ n
   }
   .marquee {
     height: max-content;
-
 
   }
     .content-marguee {
@@ -105,6 +111,11 @@ n
   .covers > .container {
     max-width: 100%;
   }
+
+  .content-marguee {
+    /* height: 960px; */
+  }
+
   .marquee__line.hidden-before-desktop {
     display: flex;
   }
