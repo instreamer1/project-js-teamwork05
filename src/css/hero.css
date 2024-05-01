@@ -19,7 +19,17 @@
   /* margin-bottom: 32px; */
 }
 
+.hero-general-container > .container {
+  display: flex;
+    gap: 50%;
+    flex-direction: column;
+
+}
+
 .hero-section > .hero-general-container {
+display: flex;
+justify-content: center;
+
   background-image: url(/img/hero/glass-effect-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
