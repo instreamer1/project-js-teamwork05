@@ -33,8 +33,8 @@ function toggleMenu() {
 function openMenu() {
   backdrop.classList.add('is-open');
   console.log('isOpen');
-
   window.addEventListener('resize', closeMenuOnResize);
+  document.body.style.overflow = 'hidden'; // turn off scroll
 }
 
 // Функція для автоматичного закриття модального вікна при зміні розміру екрану
@@ -47,6 +47,7 @@ function closeMenuOnResize() {
 // Функція для закриття модального вікна
 function closeMenu() {
   backdrop.classList.remove('is-open');
+  document.body.style.overflow = ''; //turn on scroll
 }
 
 // Функция для плавной прокрутки к элементу
