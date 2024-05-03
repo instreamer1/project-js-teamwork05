@@ -1,0 +1,26 @@
+.to-arrow-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: clamp(40px, 31.4288px + 2.6786vw, 70px);
+  height: clamp(40px, 31.4288px + 2.6786vw, 70px);
+  padding: 5px;
+  background-color: #1c1d20d9;
+  border: 1px solid var(--btn-color);
+  border-radius: 50%;
+  /* box-shadow: 0 0 50px 5px #ff0000c9; */
+  cursor: pointer;
+  z-index: 50;
+}
+
+.scroll-icon {
+  position: absolute;
+  left: 50%; 
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(13px, 8.1424px + 1.5179vw, 30px);
+  height: clamp(13px, 8.1424px + 1.5179vw, 30px);
+  transition: transform var(--cubic);
+  fill: var(--btn-color);
+}

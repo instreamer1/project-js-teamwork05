@@ -2,6 +2,7 @@
 const navList = document.querySelector('nav-list');
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
+const headerOrder = document.querySelector('.heder-btn');
 menuToggle.addEventListener('click', toggleMenu);
 menu.addEventListener('click', toggleMenu);
 
@@ -25,7 +26,7 @@ function toggleMenu() {
   } else {
     menu.style.display = 'block';
   }
-  console.log('clickMenu');
+  // console.log('clickMenu');
 }
 
 // Функція для відкриття модального вікна
@@ -47,3 +48,29 @@ function closeMenuOnResize() {
 function closeMenu() {
   backdrop.classList.remove('is-open');
 }
+
+// Функция для плавной прокрутки к элементу
+function scrollToElement(element) {
+  window.scrollTo({
+    behavior: 'smooth',
+    top: element.offsetTop,
+  });
+}
+// Обработчик клика по ссылкам в меню
+function scrollToTarget(element) {
+  const targetId = element.getAttribute('href').substr(1);
+  const targetElement = document.getElementById(targetId);
+  scrollToElement(targetElement);
+}
+
+document.querySelectorAll('.nav-list-link').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    scrollToTarget(this);
+  });
+});
+
+headerOrder.addEventListener('click', function (e) {
+  e.preventDefault();
+  scrollToTarget(this);
+});
