@@ -2,13 +2,11 @@
   background-image: url(../img/covers/background-covers.png);
   background-position: center center;
   margin: 0 auto;
-
-  /* min-width: 320px;
-  max-width: 374.98px; */
 }
+
 .covers {
   padding: 0;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .hidden-title {
@@ -53,8 +51,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 282px; */
-  /* height: 162px; */
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
@@ -72,7 +68,6 @@
   }
 }
 
-/* tablet */
 @media only screen and (min-width: 768px) {
   .content-marguee {
     height: 960px;
@@ -81,9 +76,9 @@
   .marquee__line.hidden-before-tablet {
     display: flex;
   }
+
   .background {
     background-size: contain;
-    /* max-width: 768px; */
   }
   .marquee {
     height: max-content;
