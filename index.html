@@ -10,7 +10,7 @@
     <script type="module" crossorigin src="/project-js-teamwork05/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-js-teamwork05/assets/vendor-129bc8d0.js">
     <link rel="stylesheet" href="/project-js-teamwork05/assets/vendor-0c443b57.css">
-    <link rel="stylesheet" href="/project-js-teamwork05/assets/index-d039fe11.css">
+    <link rel="stylesheet" href="/project-js-teamwork05/assets/index-8e1def7c.css">
   </head>
   <body>
     <header>
@@ -49,7 +49,7 @@
   <div class="backdrop">
     <!--is-open-->
     <div class="mobile-menu">
-      <button class="mobile-menu-btn" type="button">
+      <button class="mobile-menu-btn" type="button" aria-label="button-close-mobile-menu">
         <svg class="xclose-btn-mob" width="28" height="28">
           <use href="/project-js-teamwork05/assets/svg_sprite-opt-492270d4.svg#icon-close"></use>
         </svg>
@@ -175,7 +175,7 @@
           <div class="about-us">
             <div class="accordion-header">
               <h3 class="list-item-title">ABOUT ME</h3>
-              <button class="accordion-button" type="button">
+              <button class="accordion-button" type="button" aria-label="button-down">
                 <svg
                   class="mobile-open-us"
                   width="18"
@@ -218,7 +218,7 @@
           <div class="about-us">
             <div class="accordion-header">
               <h3 class="list-item-title">ROLE</h3>
-              <button class="accordion-button" type="button">
+              <button class="accordion-button" type="button" aria-label="button-down">
                 <svg
                   class="mobile-open-us"
                   width="18"
@@ -250,14 +250,14 @@
           <div class="about-us">
             <div class="accordion-header">
               <h3 class="list-item-title">EDUCATION</h3>
-              <button class="accordion-button" type="button">
+              <button class="accordion-button" type="button" aria-label="button-down">
                 <svg
                   class="mobile-open-us"
                   width="18"
                   height="18"
                   aria-label="icon arrow down"
                 >
-                  <use href="/project-js-teamwork05/assets/svg_sprite-opt-492270d4.svg#icon-arrow-down"></use>
+                  <use href="/project-js-teamwork05/assets/svg_sprite-opt-492270d4.svg#icon-arrow-down" aria-label="button-down"></use>
                 </svg>
               </button>
             </div>
@@ -301,7 +301,7 @@
             <li class="swiper-slide list-icon">GIT</li>
           </ul>
         </div>
-        <button class="about-swiper-button" type="button">
+        <button class="about-swiper-button" type="button" aria-label="button-right">
           <svg
             class="mobile-next-slider"
             width="28"
@@ -580,13 +580,13 @@
         </div>
       </div>
       <div class="buttons">
-        <button class="button swiper-button-prev" type="button">
+        <button class="button swiper-button-prev" type="button" aria-label="button-left">
           <svg class="arrow">
             <use href="/project-js-teamwork05/assets/svg_sprite-opt-492270d4.svg#icon-arrows-left"></use>
           </svg>
         </button>
 
-        <button class="button swiper-button-next" type="button">
+        <button class="button swiper-button-next" type="button" aria-label="button-right">
           <svg class="arrow">
             <use href="/project-js-teamwork05/assets/svg_sprite-opt-492270d4.svg#icon-arrows-right"></use>
           </svg>
@@ -704,7 +704,7 @@
     </li>
   </ul>
 </section>
-
+ 
       <section class="covers background" id="covers">
   <div class="covers">
     <h1 class="hidden-title"></h1>
@@ -745,7 +745,7 @@
                 loading="lazy"
               />
             </li>
-            <li class="marquee__line hidden-before-tablet">
+            <li class="marquee__line">
               <img
                 class="covers-img"
                 srcset="/project-js-teamwork05/assets/Rectangle12-fe44e218.jpg 1x, /project-js-teamwork05/assets/Rectangle12@2x-0cf5bd3f.jpg 2x"
@@ -846,7 +846,7 @@
                 loading="lazy"
               />
             </li>
-            <li class="marquee__line hidden-before-tablet">
+            <li class="marquee__line">
               <img
                 class="covers-img"
                 srcset="/project-js-teamwork05/assets/Rectangle10-f4184da2.jpg 1x, /project-js-teamwork05/assets/Rectangle10@2x-d4dd9c66.jpg 2x"
@@ -925,7 +925,7 @@
                 loading="lazy"
               />
             </li>
-            <li class="marquee__line hidden-before-tablet">
+            <li class="marquee__line">
               <img
                 class="covers-img"
                 srcset="/project-js-teamwork05/assets/Rectangle12-fe44e218.jpg 1x, /project-js-teamwork05/assets/Rectangle12@2x-0cf5bd3f.jpg 2x"
@@ -1141,7 +1141,7 @@
       <div class="swiper reviews-wrapper">
         <ul class="reviews-list swiper-wrapper"></ul>
         <div class="btn-wrapper">
-          <button class="swiper-button-prev reviews-btn" type="button">
+          <button class="swiper-button-prev reviews-btn" type="button" aria-label="button-left">
             <svg
               class="reviews-btn-left-icon btn-icon"
               width="24"
@@ -1151,7 +1151,7 @@
               <use href="/project-js-teamwork05/assets/svg_sprite-opt-492270d4.svg#icon-arrows-left"></use>
             </svg>
           </button>
-          <button class="swiper-button-next reviews-btn" type="button">
+          <button class="swiper-button-next reviews-btn" type="button" aria-label="button-right">
             <svg
               class="reviews-btn-right-icon btn-icon"
               width="24"
@@ -1174,8 +1174,14 @@
     <div class="footer-header-container">
       <div class="work-together-frame">
         <picture>
-          <source srcset="/project-js-teamwork05/assets/footer-img-ab19d321.jpg " media="(max-width: 767px)" />
-          <source srcset="/project-js-teamwork05/assets/footer-img@2x-58b030d0.jpg " media="(min-width: 768px)" />
+          <source
+            srcset="/project-js-teamwork05/assets/footer-img-ab19d321.jpg "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="/project-js-teamwork05/assets/footer-img@2x-58b030d0.jpg "
+            media="(min-width: 768px)"
+          />
           <img
             class="footer-header-photo"
             src="/project-js-teamwork05/assets/footer-img-ab19d321.jpg"
@@ -1211,28 +1217,39 @@
         </div>
         <div class="footer-form-frame">
           <textarea
-          class="footer-submit-textarea"
-          name="comments"
-          id="comments"
-          placeholder="comments"
-          required
-          maxlength="200"
-        ></textarea>
-        <svg class="icon-vector" width="245" height="2">
-          <use id="icon-vector" href="/project-js-teamwork05/assets/svg_sprite-opt-492270d4.svg#icon-vector"></use>
-        </svg>
+            class="footer-submit-textarea"
+            name="comments"
+            id="comments"
+            placeholder="comments"
+            required
+            maxlength="200"
+          ></textarea>
+          <svg class="icon-vector" width="245" height="2">
+            <use
+              id="icon-vector"
+              href="/project-js-teamwork05/assets/svg_sprite-opt-492270d4.svg#icon-vector"
+            ></use>
+          </svg>
         </div>
-        <button class="footer-submit-btn" type="submit" aria-label="Send button">Send</button>
+        <button
+          class="footer-submit-btn"
+          type="submit"
+          aria-label="Send button"
+        >
+          Send
+        </button>
       </form>
     </div>
     <address class="footer-contacts-container">
       <a class="footer-contacts" class="" href="mailto:lloydjefferson@gmail.com"
-        >lloydjefferson@gmail.com</a>
-      <a class="footer-contacts" href="tel:+3801111111111">+380 11 1111 11 11</a>
+        >lloydjefferson@gmail.com</a
+      >
+      <a class="footer-contacts" href="tel:+3801111111111"
+        >+380 11 1111 11 11</a
+      >
     </address>
   </div>
 </section>
-  
 
     
     <section class="modal-window">
@@ -1249,6 +1266,11 @@
 	</section>
 	</div>
 	
+    <div class="to-arrow-up" id="scrollTopBtn" title="Go to Top">
+  <svg class="scroll-icon" width="25" height="25" aria-label="icon arrow up">
+    <use href="/project-js-teamwork05/assets/svg_sprite-opt-492270d4.svg#icon-arrow-up"></use>
+  </svg>
+</div>
 
     
   </body>
